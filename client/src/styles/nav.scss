@@ -6,6 +6,12 @@
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
 .nav {
     max-width: 968px;
     height: var(--header-height);
@@ -29,55 +35,23 @@
         display: flex;
         align-items: center;
     }
-    &____toggle {
+    &__toggle {
         font-size: 1.1rem;
         cursor: pointer;
+        color: var(--title-color);
+        font-weight: var(--font-medium);
     }
-    &____toggle:hover {
+    &__toggle:hover {
         color: var(--first-color);
     }
 
-    &__logo &__toggle {
+    &__logo {
         color: var(--title-color);
         font-weight: var(--font-medium);
     }
 
     &__logo:hover {
         color: var(--first-color);
-    }
-}
-@media screen and (max-width: 350px) {
-    .nav {
-        &__menu {
-            padding: 2rem 0.25rem 4rem;
-        }
-        &__list {
-            column-gap: 0;
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .header {
-        top: 0;
-        bottom: initial;
-        padding: 0 1rem;
-    }
-    .nav {
-        height: calc(var(--header-height) + 1.5rem);
-        column-gap: 1rem;
-
-        &__menu {
-            margin-left: auto;
-        }
-        & .nav__list {
-            display: flex;
-            column-gap: 2rem;
-        }
-
-        &__icon &__close &__toggle {
-            display: none;
-        }
     }
 }
 
@@ -96,7 +70,7 @@
         }
         &__list {
             /*https://developer.mozilla.org/fr/docs/Web/CSS/grid-template-columns*/
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr) !important;
             /*https://developer.mozilla.org/fr/docs/Web/CSS/gap*/
         }
 
@@ -117,18 +91,76 @@
         }
 
         &__close {
-            position: absolute;
-            right: 1.3rem;
-            bottom: 0.5rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--first-color-alt);
+            position: absolute !important;
+            right: 1.3rem !important;
+            bottom: 0.5rem !important;
+            font-size: 1.5rem !important;
+            cursor: pointer !important;
+            color: var(--first-color-alt) !important;
         }
         &__close:hover {
-            color: var(--hue-color);
+            color: var(--hue-color) !important;
+        }
+
+        &__elodie {
+            display: none;
         }
     }
 }
+
+@media screen and (max-width: 350px) {
+    .nav {
+        &__menu {
+            padding: 2rem 0.25rem 4rem;
+        }
+        &__list {
+            column-gap: 0 !important;
+        }
+    }
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        top: 0;
+        bottom: initial;
+        padding: 0 1rem;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 1rem;
+
+        &__menu {
+            margin-left: auto;
+        }
+        &__list {
+            display: flex !important;
+            column-gap: 2rem !important;
+        }
+
+        &__icon {
+            display: none;
+        }
+        &__close {
+            display: none !important;
+        }
+        &__toggle {
+            display: none;
+        }
+
+        &__elodie {
+            max-width: 10rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         padding: 0;

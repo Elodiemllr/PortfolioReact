@@ -50,6 +50,32 @@
     --z-modal: 100;
 }
 
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.85rem;
+        --smaller-font-size: 0.8rem;
+    }
+}
+
+/*dark theme var*/
+body.dark-theme {
+    --first-color: hsl(var(--hue-color), 6%, 13%);
+
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 95%, 57%); /*color jaune de base*/
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 100%, 2%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
 /*general*/
 * {
     box-sizing: border-box;
@@ -86,42 +112,35 @@ img {
     height: auto;
 }
 
+/*class*/
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section__title {
+    font-size: var(--big-font-size);
+}
+.section__subtitle {
+    display: block;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
 //others
-.grid {
-    display: grid;
-    gap: 1.5rem;
+#home {
+    padding: 6rem 0 0;
+}
+
+@media screen and (max-width: 767px) {
 }
 
 @media screen and (max-width: 350px) {
-    .container {
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
-    }
-}
-@media screen and (max-width: 767px) {
-    .logo__elodie {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .logo__elodie {
-        max-width: 10rem;
-    }
-}
-
-@media screen and (min-width: 968px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.85rem;
-        --smaller-font-size: 0.8rem;
-    }
 }
