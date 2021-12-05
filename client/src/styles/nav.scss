@@ -15,10 +15,33 @@
     margin-bottom: 0.5em;
     margin-top: 2em;
 
-    &__logo {
+    &__changetheme {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-right: var(--mb-1);
+        cursor: pointer;
+    }
+    &__changetheme:hover {
+        color: --first-color;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+    &____toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    &____toggle:hover {
+        color: var(--first-color);
+    }
+
+    &__logo &__toggle {
         color: var(--title-color);
         font-weight: var(--font-medium);
     }
+
     &__logo:hover {
         color: var(--first-color);
     }
@@ -52,10 +75,7 @@
             column-gap: 2rem;
         }
 
-        &__icon {
-            display: none;
-        }
-        &__close {
+        &__icon &__close &__toggle {
             display: none;
         }
     }

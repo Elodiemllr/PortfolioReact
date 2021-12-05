@@ -1,5 +1,7 @@
+import AppsIcon from "@mui/icons-material/Apps";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import BallotIcon from "@mui/icons-material/Ballot";
+import Brightness6Icon from "@mui/icons-material/Brightness6";
 import BrushIcon from "@mui/icons-material/Brush";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
@@ -53,6 +55,15 @@ const Nav = () => {
                         </li>
                     </ul>
                     <CloseIcon className="nav__close" id="nav-close" />
+                </div>
+                <div className="nav__btns">
+                    <Brightness6Icon
+                        className="nav__changetheme"
+                        id="theme-button"
+                    />
+                    <div class="nav__toggle" id="nav-toggle">
+                        <AppsIcon />
+                    </div>
                 </div>
             </nav>
         </header>
