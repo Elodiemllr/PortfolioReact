@@ -112,6 +112,79 @@ img {
     height: auto;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*buttons*/
+.button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.button--flex {
+    position: relative;
+    margin: 1em;
+}
+
+/*buttons*/
+.button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.button--flex {
+    position: relative;
+    margin: 1em;
+}
+
 /*class*/
 .section {
     padding: 2rem 0 4rem;

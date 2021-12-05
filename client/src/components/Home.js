@@ -34,24 +34,56 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="home__img">
-                        <img
-                            className="home__blob"
-                            src="./img/elodie.png"
-                            alt="elodie img"
-                        />
+                        <div
+                            class="home__blob"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                            width="375pt"
+                            height="374.999991pt"
+                            viewBox="0 0 375 374.999991"
+                            version="1.2"
+                        >
+                            <img
+                                className="home__blob-img"
+                                y="-20"
+                                x="-60"
+                                src="./img/elodie.png"
+                                alt="logo_elodie"
+                            />
+                        </div>
                     </div>
                     <div className="home__data">
-                        <h1 className="home__title">Hello, I'm Elodie</h1>
+                        <h1 className="home__title">Moi, c'est Elodie!</h1>
                         <h3 className="home__subtitle">
-                            web & mobile developer
+                            développeur web et web mobile
                         </h3>
                         <p className="home__description">
-                            I'm actually searching a job in Luxembourg so...
+                            {" "}
+                            Passionnée de développement web, soupoudré d'une
+                            passion pour le design
                         </p>
                         <a href="#contact" className="button button--flex">
-                            Contact me{" "}
+                            Me contacter{" "}
                         </a>
                     </div>
+                </div>
+                <div className="home__scroll">
+                    <a
+                        href="#about"
+                        className="home__scroll-button button--flex"
+                    >
+                        <Icon
+                            icon="uil:mouse-alt-2"
+                            className="home__scroll-mouse"
+                        />
+
+                        <span className="home__scroll-name">Scroll down</span>
+
+                        <Icon
+                            icon="uil:angle-down"
+                            className="home__scroll-arrow"
+                        />
+                    </a>
                 </div>
             </div>
         </section>
