@@ -1,6 +1,12 @@
+import AutoGraphIcon from "@mui/icons-material/AutoGraph";
+import BallotIcon from "@mui/icons-material/Ballot";
+import BrushIcon from "@mui/icons-material/Brush";
+import CloseIcon from "@mui/icons-material/Close";
+import HomeIcon from "@mui/icons-material/Home";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import SendIcon from "@mui/icons-material/Send";
 import React from "react";
 import "../styles/nav.scss";
-
 const Nav = () => {
     return (
         <header>
@@ -12,42 +18,41 @@ const Nav = () => {
                     <ul className="nav__list grid">
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
-                                <i className="uil uil-estate nav__icon"></i>{" "}
-                                Home
+                                <HomeIcon className="nav__icon" /> Home
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#about" className="nav__link active-link">
-                                <i className="uil uil-user nav__icon"></i> About
+                                <PermIdentityIcon className="nav__icon" /> About
                                 me
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#skills" className="nav__link active-link">
-                                <i className="uil uil-file-info-alt nav__icon"></i>
+                                <BrushIcon className="nav__icon" />
                                 Skills
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
-                                <i className="uil uil-analysis nav__icon"></i>
+                                <AutoGraphIcon className="nav__icon" />
                                 Qualification
                             </a>
                         </li>
                         <li className="nav_item">
                             <a href="#portfolio" className="nav__link">
-                                <i className="uil uil-files-landscapes nav__icon"></i>
+                                <BallotIcon className="nav__icon" />
                                 Portfolio
                             </a>
                         </li>
                         <li className="nav_item">
                             <a href="#contact" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i>
+                                <SendIcon className="nav__icon" />
                                 Contact
                             </a>
                         </li>
                     </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                    <CloseIcon className="nav__close" id="nav-close" />
                 </div>
             </nav>
         </header>
