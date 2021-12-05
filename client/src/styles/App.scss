@@ -143,4 +143,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    .header,
+    .main,
+    .footer__container {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header,
+    .main,
+    .footer__container {
+        padding: 0;
+    }
 }

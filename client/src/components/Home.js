@@ -33,6 +33,25 @@ const Home = () => {
                             <Icon icon="uil:github-alt" />
                         </a>
                     </div>
+                    <div className="home__img">
+                        <img
+                            className="home__blob"
+                            src="./img/elodie.png"
+                            alt="elodie img"
+                        />
+                    </div>
+                    <div className="home__data">
+                        <h1 className="home__title">Hello, I'm Elodie</h1>
+                        <h3 className="home__subtitle">
+                            web & mobile developer
+                        </h3>
+                        <p className="home__description">
+                            I'm actually searching a job in Luxembourg so...
+                        </p>
+                        <a href="#contact" className="button button--flex">
+                            Contact me{" "}
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
