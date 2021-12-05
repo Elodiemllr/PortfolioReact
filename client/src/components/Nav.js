@@ -7,7 +7,7 @@ const Nav = () => {
             <nav className="nav container">
                 <a href="#" className="nav__logo">
                     <img
-                        className="nav__logo"
+                        className="nav__elodie"
                         alt="logo"
                         src="./img/logo.svg"
                     ></img>
@@ -74,7 +74,7 @@ const Nav = () => {
                 </div>
                 <div className="nav__btns">
                     <Icon
-                        icon="gg:dark-mode"
+                        icon="emojione-monotone:first-quarter-moon"
                         className="nav__changetheme"
                         id="theme-button"
                     />
