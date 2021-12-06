@@ -62,7 +62,10 @@ const Home = () => {
                             Passionnée de développement web, soupoudré d'une
                             passion pour le design
                         </p>
-                        <a href="#contact" className="button button--flex">
+                        <a
+                            href="#contact"
+                            className="button home__button button--flex"
+                        >
                             Me contacter{" "}
                         </a>
                     </div>
