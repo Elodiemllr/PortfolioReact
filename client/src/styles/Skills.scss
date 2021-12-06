@@ -1,0 +1,70 @@
+.skills {
+    &__close &__list {
+        height: 0;
+        overflow: hidden;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mb-0-5);
+        cursor: pointer;
+    }
+    &__icon {
+        margin-right: var(--mb-0-75);
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+    &__titles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-0-5);
+    }
+    &__subtitle {
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+    }
+    &__arrow {
+        margin-right: var(--mb-0-75);
+        font-size: 2rem;
+        color: var(--first-color);
+        margin-left: auto;
+        transition: 0.4s;
+    }
+    &__list {
+        row-gap: 1.5rem;
+        padding-left: 2.7rem;
+        background-color: var(--first-color);
+        padding: 0.5em;
+        opacity: 85%;
+        transition: all 0.4s ease-out;
+        opacity: 0;
+        height: max-content;
+        margin-bottom: var(--mb-2-5);
+    }
+    &__name {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+    &__close {
+        height: 0;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 568px) {
+    .skills {
+        &__content {
+            margin: 0 5em;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .skills {
+        &__title {
+            font-size: var(--normal-font-size);
+        }
+    }
+}
