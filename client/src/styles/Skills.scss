@@ -48,10 +48,6 @@
         font-size: var(--normal-font-size);
         font-weight: var(--font-medium);
     }
-    &__close {
-        height: 0;
-        overflow: hidden;
-    }
 }
 @media screen and (min-width: 568px) {
     .skills {
