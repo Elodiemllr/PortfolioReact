@@ -6,11 +6,6 @@
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-.container {
-    max-width: 900px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-}
 
 .nav {
     max-width: 968px;
@@ -122,10 +117,6 @@
             column-gap: 0 !important;
         }
     }
-    .container {
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,10 +124,6 @@
         top: 0;
         bottom: initial;
         padding: 0 1rem;
-    }
-    .container {
-        margin-left: auto;
-        margin-right: auto;
     }
     .nav {
         height: calc(var(--header-height) + 1.5rem);

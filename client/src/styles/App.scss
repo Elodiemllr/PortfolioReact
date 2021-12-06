@@ -24,7 +24,7 @@
 
     --body-font: "Roboto Condensed", sans-serif;
 
-    --big-font-size: 3rem;
+    --big-font-size: 1rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
@@ -55,10 +55,10 @@
     :root {
         --big-font-size: 3rem;
         --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.85rem;
+        --h2-font-size: 1.7rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.25rem;
+        --small-font-size: 1rem;
         --smaller-font-size: 0.8rem;
     }
 }
@@ -210,10 +210,25 @@ img {
     padding: 6rem 0 0;
 }
 
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
 @media screen and (max-width: 767px) {
 }
 
 @media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -221,6 +236,10 @@ img {
     .main,
     .footer__container {
         padding: 0 1rem;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

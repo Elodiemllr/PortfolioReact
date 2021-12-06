@@ -54,7 +54,7 @@
     }
 
     &__scroll {
-        margin: 0 3em;
+        margin: 1em 3em;
         &-button {
             color: var(--text-color-light);
             transition: 0.3s;
@@ -80,12 +80,6 @@
     padding: 2rem 0 4rem;
 }
 
-.container {
-    max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-}
-
 .grid {
     display: grid;
     gap: 1.5rem;
@@ -97,10 +91,6 @@
 }
 
 @media screen and (max-width: 350px) {
-    .container {
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
-    }
     .home {
         &__content {
             grid-template-columns: 0.25fr 3fr;
@@ -127,10 +117,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
     .home {
         &__container {
             row-gap: 5rem;
