@@ -1,1 +1,86 @@
- 
+.qualification {
+    &__tabs {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2);
+        justify-content: center;
+    }
+    &__button {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        cursor: pointer;
+    }
+    &__button:hover {
+        color: var(--first-color);
+    }
+    &__icon {
+        font-size: 1.8rem;
+        margin-right: var(--mb-0-25);
+    }
+    &__data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+        width: 100%;
+        margin: auto;
+        height: 5rem;
+    }
+    &__title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+    &__subtitle {
+        display: inline-block;
+        font-size: var(--small-font-size);
+    }
+    &__calendar {
+        font-size: var(--smaller-font-size);
+        color: --text-color-light;
+    }
+    &__rounder {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+    }
+    &__line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: var(--first-color);
+        transform: translate(6px, -7px);
+    }
+}
+#education__info {
+    margin-left: 1em;
+}
+
+.qualification__active[data-content] {
+    display: block;
+}
+
+.qualification__button.qualification__active {
+    color: var(--first-color);
+}
+
+@media screen and (min-width: 568px) {
+    .qualification {
+        &__sections {
+            display: grid;
+            grid-template-columns: 0.6fr;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .qualification {
+        &__button {
+            margin: 0 var(--mb-1);
+        }
+        &__sections {
+            grid-template-columns: 0.5fr;
+        }
+    }
+}
