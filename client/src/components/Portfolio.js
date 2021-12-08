@@ -1,18 +1,32 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Button, Card } from "semantic-ui-react";
 import Datas from "../data.js";
 import "../styles/Portfolio.scss";
 
 const Portfolio = () => {
+    const ButtonExampleEmphasis = () => (
+        <div>
+            <Button primary>Primary</Button>
+            <Button secondary>Secondary</Button>
+        </div>
+    );
     return (
-        <Carousel>
+        <div className="portfolio">
+            <h2> Mes projets </h2>
             {Datas.map((slide) => (
-                <div key={slide.id}>
-                    <img src={slide.image} alt=" projet" />
-                </div>
+                <>
+                    <Card
+                        key={slide.id}
+                        className="portfolio__container"
+                        image={slide.image}
+                        header={slide.name}
+                        meta={slide.langage}
+                        description={slide.description}
+                        extra={<ButtonExampleEmphasis />}
+                    />{" "}
+                </>
             ))}
-        </Carousel>
+        </div>
     );
 };
 

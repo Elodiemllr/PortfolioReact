@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "semantic-ui-css/semantic.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Nav from "./components/Nav.js";
