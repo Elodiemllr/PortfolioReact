@@ -3,7 +3,6 @@ const Datas = [
         id: 1,
         name: "By Erika",
 
-        langage: "react",
         description:
             "By Erika est un faux shop en ligne, inspiré d'une boutique d'une amie",
         image: "./img/ByErika.png",
@@ -13,7 +12,6 @@ const Datas = [
     {
         id: 2,
         name: "Calculatrice",
-        langage: "react",
         description:
             "Un projet simple et rapide à faire mais toujours pratique",
         image: "./img/Calculatrice.jpg",
@@ -23,7 +21,6 @@ const Datas = [
     {
         id: 3,
         name: "Fake Movie App",
-        langage: "react",
         description:
             "Un clone inspiré du géant des platform de vidéo en ligne, Netflix",
         image: "./img/fakeNetflix.png",
@@ -35,7 +32,7 @@ const Datas = [
         name: "Kodo",
         description:
             "Un projet de fin d'année, réalisé en équipe avec la méthodologie agile",
-        langage: "react, nodeJs",
+
         image: "./img/kodo.jpg",
         github: "#",
         link: "https://kodo-ecolo.netlify.app/",
@@ -43,7 +40,6 @@ const Datas = [
     {
         id: 5,
         name: "Space share",
-        langage: "react, nodeJS, Mongodb",
         description:
             "Un réseau social simple avec systeme de connexion, profil et post",
         image: "./img/spaceshare.png",

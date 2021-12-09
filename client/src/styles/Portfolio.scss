@@ -1,1 +1,41 @@
- 
+.portfolio {
+    width: 80%;
+    margin: auto !important;
+
+    &__projets {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    &__container {
+        margin: 1em 5em !important;
+        flex: 40%;
+        max-width: 30vw !important;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    &__buttons {
+        text-align: center;
+    }
+    &__button {
+        margin: 1em !important;
+        .primary {
+            background-color: aqua !important;
+        }
+    }
+
+    .image {
+        height: 30em;
+        img {
+            height: inherit !important;
+            object-fit: cover !important;
+        }
+    }
+
+    h2 {
+        margin: 2em 0;
+    }
+}
