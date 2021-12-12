@@ -26,7 +26,7 @@ const Nav = () => {
                         toggleMenu ? "nav__menu" : "nav__menu" && "show-menu"
                     }`}
                 >
-                    <ul className="nav__list grid">
+                    <ul className="nav__list grid" onClick={handleClick}>
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
                                 <Icon
