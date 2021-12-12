@@ -5,16 +5,16 @@
     /*color*/
     --hue-color: 47;
 
-    --first-color: hsl(var(--hue-color), 95%, 57%); /*color jaune de base*/
+    --first-color: #e77d826c; /*color jaune de base*/
     --first-color-second: hsl(
         var(--hue-color),
         69%,
         61%
     ); /*color jaune plus neutre */
     --first-color-alt: hsl(var(--hue-color), 90%, 50%); /* plus foncé */
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%); /* plus clair*/
+    --first-color-lighter: #b65d62fa;
     --title-color: hsl(var(--hue-color), 8%, 15%); /* brun foncé*/
-    --text-color: hsl(var(--hue-color), 8%, 45%); /* brun clair*/
+    --text-color: rgb(34, 34, 34); /* brun clair*/
     --text-color-light: hsl(var(--hue-color), 8%, 65%); /*plus clair*/
     --input-color: hsl(var(--hue-color), 70%, 96%); /*blanc cassé*/
     --body-color: hsl(var(--hue-color), 60%, 99%); /* blanc*/
@@ -217,8 +217,6 @@ img {
 
 .container {
     max-width: 900px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
 }
 
 @media screen and (max-width: 767px) {

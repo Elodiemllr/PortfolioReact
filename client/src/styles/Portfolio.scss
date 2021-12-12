@@ -22,11 +22,7 @@
     }
     &__button {
         margin: 1em !important;
-        .primary {
-            background-color: aqua !important;
-        }
     }
-
     .image {
         height: 30em;
         img {
@@ -34,8 +30,33 @@
             object-fit: cover !important;
         }
     }
+}
+.ui.primary.button {
+    background-color: #d4666c;
+    a {
+        color: rgb(14, 14, 14) !important;
+    }
+}
 
-    h2 {
-        margin: 2em 0;
+.ui.secondary.button {
+    background-color: rgb(14, 14, 14);
+    a {
+        color: #d4666c !important;
+    }
+}
+
+.ui.primary.button:hover {
+    background-color: #ffffff;
+    border: 0.1em solid #d4666c;
+    a {
+        color: #db6167 !important;
+    }
+}
+
+.ui.secondary.button:hover {
+    background-color: rgb(255, 255, 255);
+    border: 0.1em solid #d4666c;
+    a {
+        color: #db6167 !important;
     }
 }

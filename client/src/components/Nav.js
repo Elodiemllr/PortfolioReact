@@ -1,7 +1,16 @@
 import { Icon } from "@iconify/react";
-import React from "react";
+import React, { useState } from "react";
 import "../styles/nav.scss";
 const Nav = () => {
+    //afficher le menu burger
+    const [toggleMenu, setToggleMenu] = useState(false);
+    const [displayIcon, setDisplayIcon] = useState(false);
+
+    // au click sur  mon button, si toggleMenu est à true alors je le passe à false, et inversement
+    const handleClick = () => {
+        toggleMenu ? setToggleMenu(false) : setToggleMenu(true);
+        displayIcon ? setDisplayIcon(false) : setDisplayIcon(true);
+    };
     return (
         <header className="header" id="header">
             <nav className="nav container">
@@ -12,7 +21,11 @@ const Nav = () => {
                         src="./img/logo.svg"
                     ></img>
                 </a>
-                <div className="nav__menu">
+                <div
+                    className={`nav ${
+                        toggleMenu ? "nav__menu" : "nav__menu" && "show-menu"
+                    }`}
+                >
                     <ul className="nav__list grid">
                         <li className="nav__item">
                             <a href="#home" className="nav__link active-link">
@@ -66,11 +79,6 @@ const Nav = () => {
                             </a>
                         </li>
                     </ul>
-                    <Icon
-                        icon="ant-design:close-outlined"
-                        className="nav__close"
-                        id="nav-close"
-                    />
                 </div>
                 <div className="nav__btns">
                     <Icon
@@ -78,8 +86,21 @@ const Nav = () => {
                         className="nav__changetheme"
                         id="theme-button"
                     />
-                    <div class="nav__toggle" id="nav-toggle">
-                        <Icon icon="uil:apps" />
+                    <div
+                        class="nav__toggle"
+                        id="nav-toggle"
+                        onClick={handleClick}
+                    >
+                        {" "}
+                        {displayIcon ? (
+                            <Icon icon="uil:apps" />
+                        ) : (
+                            <Icon
+                                icon="ant-design:close-outlined"
+                                className="nav__close"
+                                id="nav-close"
+                            />
+                        )}
                     </div>
                 </div>
             </nav>

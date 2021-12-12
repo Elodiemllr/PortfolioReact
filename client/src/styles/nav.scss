@@ -6,7 +6,13 @@
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-
+/*show menu*/
+.show-menu {
+    bottom: 0;
+}
+.dontToggle {
+    display: none;
+}
 .nav {
     max-width: 968px;
     height: var(--header-height);
