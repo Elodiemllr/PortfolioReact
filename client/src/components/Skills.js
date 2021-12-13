@@ -1,16 +1,21 @@
 import { Icon } from "@iconify/react";
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Skills.scss";
 
 const Skills = () => {
+    const [skills, setSkills] = useState(true);
+
+    const showSkills = () => {
+        skills ? setSkills(false) : setSkills(true);
+    };
     return (
         <section className="skills section" id="skills">
             <h2 className="section__title">Skills</h2>
             <span className="section__subtitle">My technical level </span>
             <div className="skills__container container grid">
                 <div className="skills__contain">
-                    <div className="skills__content skills__close">
-                        <div className="skills__header">
+                    <div class="skills__content  ">
+                        <div class="skills__header" onClick={showSkills}>
                             <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">
@@ -20,13 +25,22 @@ const Skills = () => {
                                     O'clock formation
                                 </span>
                             </div>
-                            <Icon
-                                icon="uil:angle-up"
-                                className="skills__arrow"
-                            />
+                            <div className="skills__arrow">
+                                {skills ? (
+                                    <Icon icon="uil:angle-up" />
+                                ) : (
+                                    <Icon icon="uil:angle-down" />
+                                )}
+                            </div>
                         </div>
 
-                        <div className="skills__list grid">
+                        <div
+                            className={`grid ${
+                                skills
+                                    ? "skills__list" && "skills__close"
+                                    : "skills__open"
+                            }`}
+                        >
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">HTML</h3>
@@ -49,7 +63,7 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="skills__content skills__close">
+                    <div className="skills__content  ">
                         <div className="skills__header">
                             <Icon
                                 icon="uil:database-alt"
@@ -98,7 +112,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skills__content skills__close">
+                    <div className="skills__content  ">
                         <div className="skills__header">
                             <Icon icon="uil:screw" className="skills__icon" />
                             <div>

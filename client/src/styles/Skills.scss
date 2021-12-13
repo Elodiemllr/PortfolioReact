@@ -1,8 +1,20 @@
 .skills {
-    &__close &__list {
+    &__close {
         height: 0;
         overflow: hidden;
     }
+
+    &__list {
+    }
+
+    &__open {
+        height: max-content;
+        margin-bottom: var(--mb-2-5);
+        background-color: red;
+        height: fit-content;
+        overflow: revert;
+    }
+
     &__header {
         display: flex;
         align-items: center;
