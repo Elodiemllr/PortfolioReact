@@ -5,7 +5,7 @@ import "../styles/Skills.scss";
 const Skills = () => {
     const [skills, setSkills] = useState(true);
 
-    const showSkills = () => {
+    const showSkills = (e) => {
         skills ? setSkills(false) : setSkills(true);
     };
     return (
@@ -14,8 +14,16 @@ const Skills = () => {
             <span className="section__subtitle">My technical level </span>
             <div className="skills__container container grid">
                 <div className="skills__contain">
-                    <div class="skills__content  ">
-                        <div class="skills__header" onClick={showSkills}>
+                    <div
+                        class={`skills__content ${
+                            skills
+                                ? "skills__list" && "skills__close"
+                                : "skills__open"
+                        }`}
+                        id="front"
+                        onClick={showSkills}
+                    >
+                        <div class="skills__header">
                             <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">
@@ -23,22 +31,24 @@ const Skills = () => {
                                 </h1>
                                 <span className="skills__subtitle">
                                     O'clock formation
-                                </span>
+                                </span>{" "}
                             </div>
-                            <div className="skills__arrow">
-                                {skills ? (
-                                    <Icon icon="uil:angle-up" />
-                                ) : (
-                                    <Icon icon="uil:angle-down" />
-                                )}
-                            </div>
+                            {skills ? (
+                                <Icon
+                                    icon="uil:angle-up"
+                                    className="skills__arrow"
+                                />
+                            ) : (
+                                <Icon
+                                    icon="uil:angle-down"
+                                    className="skills__arrow"
+                                />
+                            )}
                         </div>
 
                         <div
-                            className={`grid ${
-                                skills
-                                    ? "skills__list" && "skills__close"
-                                    : "skills__open"
+                            className={` ${
+                                skills ? "skills__list" : "skills__list__show"
                             }`}
                         >
                             <div className="skills__data">
@@ -63,45 +73,62 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="skills__content  ">
-                        <div className="skills__header">
-                            <Icon
-                                icon="uil:database-alt"
-                                className="skills__icon"
-                            />
+
+                    <div
+                        class={`skills__content ${
+                            skills
+                                ? "skills__list" && "skills__close"
+                                : "skills__open"
+                        }`}
+                        id="front"
+                        onClick={showSkills}
+                    >
+                        <div class="skills__header">
+                            <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">
                                     Backend developer
                                 </h1>
                                 <span className="skills__subtitle">
                                     O'clock formation
-                                </span>
+                                </span>{" "}
                             </div>
-                            <Icon
-                                icon="uil:angle-up"
-                                className="skills__arrow"
-                            />
+                            {skills ? (
+                                <Icon
+                                    icon="uil:angle-up"
+                                    className="skills__arrow"
+                                />
+                            ) : (
+                                <Icon
+                                    icon="uil:angle-down"
+                                    className="skills__arrow"
+                                />
+                            )}
                         </div>
 
-                        <div className="skills__list grid">
+                        <div
+                            className={` ${
+                                skills ? "skills__list" : "skills__list__show"
+                            }`}
+                        >
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">NODE js</h3>
-                                </div>
-                            </div>
-                            <div className="skills__data">
-                                <div className="skills__titles">
-                                    <h3 className="skills__name">PostgreSQL</h3>
-                                </div>
-                            </div>
-                            <div className="skills__data">
-                                <div className="skills__titles">
-                                    <h3 className="skills__name">mongoDB</h3>
+                                    <h3 className="skills__name">Node js</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Express</h3>
+                                </div>
+                            </div>
+                            <div className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">Mongo db</h3>
+                                </div>
+                            </div>
+                            <div className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">Postgresql</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
@@ -112,50 +139,74 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skills__content  ">
-                        <div className="skills__header">
-                            <Icon icon="uil:screw" className="skills__icon" />
+                    <div
+                        class={`skills__content ${
+                            skills
+                                ? "skills__list" && "skills__close"
+                                : "skills__open"
+                        }`}
+                        id="front"
+                        onClick={showSkills}
+                    >
+                        <div class="skills__header">
+                            <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">TOOLS</h1>
                                 <span className="skills__subtitle">
                                     O'clock formation
-                                </span>
+                                </span>{" "}
                             </div>
-                            <Icon
-                                icon="uil:angle-up"
-                                className="skills__arrow"
-                            />
+                            {skills ? (
+                                <Icon
+                                    icon="uil:angle-up"
+                                    className="skills__arrow"
+                                />
+                            ) : (
+                                <Icon
+                                    icon="uil:angle-down"
+                                    className="skills__arrow"
+                                />
+                            )}
                         </div>
 
-                        <div className="skills__list grid">
+                        <div
+                            className={` ${
+                                skills ? "skills__list" : "skills__list__show"
+                            }`}
+                        >
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">VS code</h3>
+                                    <h3 className="skills__name">Vs code</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">GIT</h3>
+                                    <h3 className="skills__name">Git</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Github</h3>
+                                    <h3 className="skills__name">github</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Trello</h3>
+                                    <h3 className="skills__name">trello</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Whimsical</h3>
+                                    <h3 className="skills__name">whimsical</h3>
                                 </div>
                             </div>
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Figma</h3>
+                                    <h3 className="skills__name">Figma </h3>
+                                </div>
+                            </div>
+                            <div className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name"> Davinci </h3>
                                 </div>
                             </div>
                             <div className="skills__data">
@@ -166,11 +217,6 @@ const Skills = () => {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Gimp</h3>
-                                </div>
-                            </div>{" "}
-                            <div className="skills__data">
-                                <div className="skills__titles">
-                                    <h3 className="skills__name">Da Vinci</h3>
                                 </div>
                             </div>
                         </div>
