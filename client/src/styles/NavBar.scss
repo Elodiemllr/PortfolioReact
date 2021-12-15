@@ -26,19 +26,32 @@
         margin: 0.5em 0.5em;
     }
 
+    &__center {
+        width: 1em;
+        border-top: 3px solid #000;
+        margin: 0.5em auto;
+    }
+
     &__title {
         writing-mode: vertical-rl;
         text-orientation: upright;
         font-size: 0.7em;
         text-transform: uppercase;
     }
+
+    &__titleShow {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        margin: auto;
+        letter-spacing: 0.2em;
+    }
 }
-.test {
+.navBarShow {
     background-color: #fff;
     position: fixed;
     height: 100vw;
     position: relative;
     background-color: white;
-    width: 5em;
+    width: 8em;
     position: fixed;
 }

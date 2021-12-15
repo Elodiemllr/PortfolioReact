@@ -9,18 +9,26 @@ const NavBar = () => {
     };
 
     return (
-        <div className={` ${moveMenu ? "test " : "navBar"}`}>
+        <div className={` ${moveMenu ? "navBarShow " : "navBar"}`}>
             <div
                 className="navBar__content"
                 onMouseEnter={showMoveMenu}
                 onMouseLeave={showMoveMenu}
             >
                 <div className="navBar__lines">
-                    <div className="navBar__line" id="top"></div>
-                    <div className="navBar__line" id="center"></div>
-                    <div className="navBar__line" id="bottom"></div>
+                    <div className="navBar__line"></div>
+                    <div
+                        className={` ${
+                            moveMenu ? "navBar__center" : "navBar__line"
+                        }`}
+                    ></div>
+                    <div className="navBar__line"></div>
                 </div>
-                <div className="navBar__title">
+                <div
+                    className={` ${
+                        moveMenu ? "  navBar__titleShow" : "navBar__title"
+                    }`}
+                >
                     <p> Menu </p>
                 </div>
             </div>
