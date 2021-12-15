@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/NavBar.scss";
 
 const NavBar = () => {
+    const [moveMenu, setMoveMenu] = useState(false);
+
+    const showMoveMenu = () => {
+        moveMenu ? setMoveMenu(false) : setMoveMenu(true);
+    };
     return (
         <div className="navBar">
-            <div className="navBar__content">
+            <div
+                className={`  ${moveMenu ? "navBar__content" : "test"}`}
+                onMouseEnter={showMoveMenu}
+            >
                 <div className="navBar__lines">
                     <div className="navBar__line" id="top"></div>
                     <div className="navBar__line" id="center"></div>
