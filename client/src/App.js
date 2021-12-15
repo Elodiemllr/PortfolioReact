@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import Banner from "./components/Banner.js";
 import Home from "./components/Home.js";
+import NavBar from "./components/NavBar.js";
 import Portfolio from "./components/Portfolio.js";
 import Qualification from "./components/Qualification.js";
 import Skills from "./components/Skills.js";
@@ -20,6 +21,7 @@ function App() {
                         element={
                             <>
                                 <Banner />
+                                <NavBar />
                                 <main className="main">
                                     <Home />
                                     <About />
