@@ -56,3 +56,11 @@
     width: 8em;
     position: fixed;
 }
+
+.showNav {
+    width: 50em;
+    z-index: 1;
+    .navBar__content {
+        display: none;
+    }
+}
