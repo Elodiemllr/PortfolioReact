@@ -3,10 +3,19 @@ import React, { useState } from "react";
 import "../styles/Skills.scss";
 
 const Skills = () => {
-    const [skills, setSkills] = useState(true);
+    const [skillsFront, setSkillsFront] = useState(true);
+    const [skillsBack, setSkillsBack] = useState(true);
+    const [skillsTools, setSkillsTools] = useState(true);
 
-    const showSkills = (e) => {
-        skills ? setSkills(false) : setSkills(true);
+    const showSkillsFront = (e) => {
+        skillsFront ? setSkillsFront(false) : setSkillsFront(true);
+    };
+    const showSkillsBack = (e) => {
+        skillsBack ? setSkillsBack(false) : setSkillsBack(true);
+    };
+    const showSkillsTools = (e) => {
+        skillsTools ? setSkillsTools(false) : setSkillsTools(true);
+        console.log(e.target);
     };
     return (
         <section className="skills section" id="skills">
@@ -16,14 +25,13 @@ const Skills = () => {
                 <div className="skills__contain">
                     <div
                         class={`skills__content ${
-                            skills
+                            skillsFront
                                 ? "skills__list" && "skills__close"
                                 : "skills__open"
                         }`}
                         id="front"
-                        onClick={showSkills}
                     >
-                        <div class="skills__header">
+                        <div class="skills__header" onClick={showSkillsFront}>
                             <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">
@@ -33,7 +41,7 @@ const Skills = () => {
                                     O'clock formation
                                 </span>{" "}
                             </div>
-                            {skills ? (
+                            {skillsFront ? (
                                 <Icon
                                     icon="uil:angle-up"
                                     className="skills__arrow"
@@ -48,7 +56,9 @@ const Skills = () => {
 
                         <div
                             className={` ${
-                                skills ? "skills__list" : "skills__list__show"
+                                skillsFront
+                                    ? "skills__list"
+                                    : "skills__list__show"
                             }`}
                         >
                             <div className="skills__data">
@@ -76,14 +86,13 @@ const Skills = () => {
 
                     <div
                         class={`skills__content ${
-                            skills
+                            skillsBack
                                 ? "skills__list" && "skills__close"
                                 : "skills__open"
                         }`}
                         id="front"
-                        onClick={showSkills}
                     >
-                        <div class="skills__header">
+                        <div class="skills__header" onClick={showSkillsBack}>
                             <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">
@@ -93,7 +102,7 @@ const Skills = () => {
                                     O'clock formation
                                 </span>{" "}
                             </div>
-                            {skills ? (
+                            {skillsBack ? (
                                 <Icon
                                     icon="uil:angle-up"
                                     className="skills__arrow"
@@ -108,7 +117,9 @@ const Skills = () => {
 
                         <div
                             className={` ${
-                                skills ? "skills__list" : "skills__list__show"
+                                skillsBack
+                                    ? "skills__list"
+                                    : "skills__list__show"
                             }`}
                         >
                             <div className="skills__data">
@@ -141,14 +152,13 @@ const Skills = () => {
 
                     <div
                         class={`skills__content ${
-                            skills
+                            skillsTools
                                 ? "skills__list" && "skills__close"
                                 : "skills__open"
                         }`}
                         id="front"
-                        onClick={showSkills}
                     >
-                        <div class="skills__header">
+                        <div class="skills__header" onClick={showSkillsTools}>
                             <Icon icon="uil:apps" className="skills__icon" />
                             <div>
                                 <h1 className="skills__title">TOOLS</h1>
@@ -156,7 +166,7 @@ const Skills = () => {
                                     O'clock formation
                                 </span>{" "}
                             </div>
-                            {skills ? (
+                            {skillsTools ? (
                                 <Icon
                                     icon="uil:angle-up"
                                     className="skills__arrow"
@@ -171,7 +181,9 @@ const Skills = () => {
 
                         <div
                             className={` ${
-                                skills ? "skills__list" : "skills__list__show"
+                                skillsTools
+                                    ? "skills__list"
+                                    : "skills__list__show"
                             }`}
                         >
                             <div className="skills__data">

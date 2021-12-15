@@ -1,0 +1,23 @@
+.banner {
+    position: fixed;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    &__text {
+        margin: auto 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+    }
+    #banner__contact {
+        font-weight: 100;
+    }
+    &__icon {
+        font-size: 24px;
+    }
+}
