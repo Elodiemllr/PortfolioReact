@@ -5,13 +5,15 @@ const NavBar = () => {
     const [moveMenu, setMoveMenu] = useState(false);
 
     const showMoveMenu = () => {
-        moveMenu ? setMoveMenu(false) : setMoveMenu(true);
+        setMoveMenu(!moveMenu);
     };
+
     return (
-        <div className="navBar">
+        <div className={` ${moveMenu ? "test " : "navBar"}`}>
             <div
-                className={`  ${moveMenu ? "navBar__content" : "test"}`}
+                className="navBar__content"
                 onMouseEnter={showMoveMenu}
+                onMouseLeave={showMoveMenu}
             >
                 <div className="navBar__lines">
                     <div className="navBar__line" id="top"></div>
