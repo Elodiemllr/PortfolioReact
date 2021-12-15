@@ -8,12 +8,17 @@ const NavBar = () => {
         setMoveMenu(!moveMenu);
     };
 
+    const showMenu = () => {
+        console.log("hey");
+    };
+
     return (
         <div className={` ${moveMenu ? "navBarShow " : "navBar"}`}>
             <div
                 className="navBar__content"
                 onMouseEnter={showMoveMenu}
                 onMouseLeave={showMoveMenu}
+                onClick={showMenu}
             >
                 <div className="navBar__lines">
                     <div className="navBar__line"></div>
