@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar.js";
 import Portfolio from "./components/Portfolio.js";
 import Qualification from "./components/Qualification.js";
 import Skills from "./components/Skills.js";
+import SocialMedia from "./components/SocialMedia.js";
 import "./styles/App.scss";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                             <>
                                 <Banner />
                                 <NavBar />
+                                <SocialMedia />
                                 <main className="main">
                                     <Home />
                                     <About />

@@ -1,0 +1,21 @@
+.social {
+    background-color: #fff;
+    height: 100vw;
+    float: right;
+    width: 100px;
+    width: 3em;
+
+    &__content {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            margin: 0.2em 0;
+            font-size: 1.3em;
+            color: #cc5873;
+        }
+    }
+}

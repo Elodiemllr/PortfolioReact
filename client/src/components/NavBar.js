@@ -6,11 +6,16 @@ const NavBar = () => {
     const [moveMenu, setMoveMenu] = useState(false);
     const [showNav, setShowNav] = useState(false);
     const showMoveMenu = () => {
-        setMoveMenu(!moveMenu);
+        moveMenu ? setMoveMenu(false) : setMoveMenu(true);
     };
 
     const showMenu = () => {
-        setShowNav(!showNav);
+        showNav ? setShowNav(false) : setShowNav(true);
+    };
+
+    const initialState = () => {
+        setMoveMenu(false);
+        showNav ? setShowNav(false) : setShowNav(true);
     };
 
     return (
@@ -44,34 +49,48 @@ const NavBar = () => {
                     </div>
                 </div>
             ) : (
-                <div>
+                <div className="menu">
                     <Icon
                         icon="ant-design:close-outlined"
-                        className="nav__close"
+                        className="menu__close"
                         id="nav-close"
+                        onClick={initialState}
                     />
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <a href="#home" className="menu__link">
                                 About
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <a href="#home" className="menu__link">
                                 Skills
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <a href="#home" className="menu__link">
                                 Qualification
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <a
+                                href="#home"
+                                className="menu__link"
+                                id="nav__cat"
+                            >
                                 Work
-                                <a href="#"> Work 1</a>
-                                <a href="#"> Work 2</a>
-                                <a href="#"> Work 3</a>
+                                <a href="#" className="subLink">
+                                    {" "}
+                                    Work 1
+                                </a>
+                                <a href="#" className="subLink">
+                                    {" "}
+                                    Work 2
+                                </a>
+                                <a href="#" className="subLink">
+                                    {" "}
+                                    Work 3
+                                </a>
                             </a>
                         </li>
                     </ul>
