@@ -1,0 +1,11 @@
+.home {
+    height: 50em;
+    &__container {
+        height: max-content;
+
+        video {
+            height: 40em;
+            width: -webkit-fill-available;
+        }
+    }
+}

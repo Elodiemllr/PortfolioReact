@@ -10,7 +10,6 @@ const About = () => {
                 Laissez moi me presenter ..{" "}
             </span>
             <div className="about__container container grid">
-                <img src="./img/elodiecv.jpeg" alt="" className="about__img" />
                 <div className="about__data">
                     <p className="about__description">
                         Moi c'est Elodie, 24 ans. J'ai commencé mon parcours en
