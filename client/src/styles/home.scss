@@ -1,11 +1,64 @@
 .home {
-    height: 50em;
-    &__container {
-        height: max-content;
+    display: block;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    perspective: 1643px;
 
+    &__spacer {
+        width: 20px;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+    &__container {
+        display: flex !important;
+        height: 100vh;
+        min-height: 700px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
         video {
-            height: 40em;
-            width: -webkit-fill-available;
+            max-height: 58vh;
+            width: 100%;
+        }
+    }
+
+    &__scroll {
+        &__button {
+            display: block;
+            margin: auto;
+            font-size: 3em;
+        }
+        &__arrow {
+            margin: auto;
+            display: block;
+            color: #000;
         }
     }
 }
