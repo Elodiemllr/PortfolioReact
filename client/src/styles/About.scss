@@ -1,81 +1,65 @@
-@media screen and (min-width: 568px) {
-    .about {
-        &__container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+.aboutsection {
+    max-width: 1500px;
+    padding: 80px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-    .about {
-        &__container {
-            column-gap: 5rem;
-        }
-        &__img {
-            width: 350px;
-        }
-        &__description {
-            text-align: initial;
-        }
-        &__info div {
-            margin: 0 2em;
-        }
-        &__info {
-            justify-content: space-between;
-            &__one {
-                padding-bottom: 1em;
-            }
-        }
-        &__buttons {
-            justify-content: center;
-        }
-    }
-}
-#about {
-    background-color: var(--first-color);
+.section__title {
+    margin-bottom: 10px !important;
+    font-size: 30px !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000;
 }
 
 .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
     &__img {
-        width: fit-content;
-        border-radius: 0.5rem;
-        justify-self: center;
-        align-self: center;
-        background-size: cover;
+        width: 50%;
+        margin-top: 112px;
+        margin-right: 56px;
+        flex: 0 auto;
+
+        img {
+            border: 0;
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
     }
-    &__description {
+
+    &__content {
+        width: 50%;
+
+        display: block;
+    }
+    &__sub {
+        margin-bottom: 32px;
+        margin-left: -122px;
+    }
+    &__subtitle {
         text-align: left;
-        margin-bottom: var(--mb-2-5);
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: 500;
     }
-    &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        max-block-size: fit-content;
-        margin-bottom: 2rem;
-        &-title {
-            font-size: var(--h2-font-size);
-            font-weight: var(--font-semi-bold);
-            color: var(--title-color);
-            display: block;
-            text-align: center;
-            padding-right: 1em;
-        }
-        &-name {
-            font-size: var(--normal-font-size);
-            display: block;
-            text-align: inherit;
-        }
-        &__one {
-            margin-bottom: 1em;
-            display: flex;
-        }
-    }
-    &__buttons {
-        display: flex;
-        justify-content: center;
-    }
-    &__icon {
-        color: var(--first-color-lighter);
+
+    &__description {
+        font-size: 24px;
+        line-height: 50px;
+        margin-bottom: 10px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 }

@@ -8,8 +8,6 @@ const Project = () => {
             {/*project 1 */}
             <div className="project " id="project">
                 <div className="project__content1">
-                    {" "}
-                    blanc
                     <img src="./img/test.png" alt="test" />
                     <div className="project__text1">
                         <p> blabla </p>
@@ -23,12 +21,15 @@ const Project = () => {
                         </Button>
                     </div>
                 </div>
+                <a className="project__next" href="#project2">
+                    {" "}
+                    next project
+                </a>
             </div>
 
             {/*project 2 */}
-            <div className="project2  " id="project">
+            <div className="project2  " id="project2">
                 <div className="project2__content2">
-                    <img src="./img/test.png" alt="test" />
                     <div className="project2__text2">
                         <p> blabla </p>
                         <h3> title </h3>
@@ -40,11 +41,17 @@ const Project = () => {
                             <a href="#">Site web</a>
                         </Button>
                     </div>
+                    <img src="./img/test.png" alt="test" />
                 </div>
+
+                <a className="project2__next" href="#project3">
+                    {" "}
+                    next project
+                </a>
             </div>
 
             {/*project 3 */}
-            <div className="project3 " id="project">
+            <div className="project3 " id="project3">
                 <div className="project3__content3">
                     <img src="./img/test.png" alt="test" />
                     <div className="project3__text3">
