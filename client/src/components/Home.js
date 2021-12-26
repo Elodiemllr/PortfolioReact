@@ -11,7 +11,10 @@ const Home = () => {
                     <source src={videoElodie} type="video/mp4" />
                 </video>
                 <div className="home__spacer"> </div>
-                <a href="#about" className="home__scroll__button button--flex">
+                <a
+                    href="#project"
+                    className="home__scroll__button button--flex"
+                >
                     <Icon
                         icon="bi:arrow-down"
                         className="home__scroll__arrow"

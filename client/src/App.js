@@ -6,6 +6,7 @@ import Banner from "./components/Banner.js";
 import Home from "./components/Home.js";
 import NavBar from "./components/NavBar.js";
 import Portfolio from "./components/Portfolio.js";
+import Project from "./components/Project.js";
 import Qualification from "./components/Qualification.js";
 import Skills from "./components/Skills.js";
 import SocialMedia from "./components/SocialMedia.js";
@@ -26,6 +27,7 @@ function App() {
                                 <SocialMedia />
                                 <main className="main">
                                     <Home />
+                                    <Project />
                                     <About />
                                     <Skills />
                                     <Qualification />
