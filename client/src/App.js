@@ -1,6 +1,8 @@
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
+import styled from "styled-components";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import Banner from "./components/Banner.js";
@@ -24,20 +26,28 @@ function App() {
                         path="/"
                         element={
                             <>
-                                <Banner />
-                                <NavBar />
-                                <SocialMedia />
-                                <main className="main">
-                                    <Home />
-                                    <Canvas>
-                                        <Box />
-                                    </Canvas>
-                                    <Project />
-                                    <About />
-                                    <Skills />
-                                    <Qualification />
-                                    <Portfolio />
-                                </main>
+                                <Wrapper className="App">
+                                    <Banner />
+                                    <NavBar />
+                                    <SocialMedia />
+                                    <main className="main">
+                                        <Home />
+                                        <Canvas className="canvas">
+                                            <OrbitControls enableZoom={false} />
+                                            <ambientLight intensity={0.5} />
+                                            <directionalLight
+                                                position={[-2, 5, 2]}
+                                                intensity={1}
+                                            />
+                                            <Box className="box" />
+                                        </Canvas>
+                                        <Project />
+                                        <About />
+                                        <Skills />
+                                        <Qualification />
+                                        <Portfolio />
+                                    </main>
+                                </Wrapper>
                             </>
                         }
                     />
@@ -46,5 +56,11 @@ function App() {
         </div>
     );
 }
+
+const Wrapper = styled.div`
+    canvas {
+        height: 500px;
+    }
+`;
 
 export default App;
