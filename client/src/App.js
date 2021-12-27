@@ -1,12 +1,9 @@
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HorizontalScroll from "react-scroll-horizontal";
 import "semantic-ui-css/semantic.min.css";
-import styled from "styled-components";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import Banner from "./components/Banner.js";
-import Box from "./components/Box.js";
 import Home from "./components/Home.js";
 import NavBar from "./components/NavBar.js";
 import Portfolio from "./components/Portfolio.js";
@@ -19,48 +16,43 @@ import "./styles/App.scss";
 function App() {
     return (
         <div className="App">
-            <Router>
-                <Routes>
-                    <Route
-                        exact
-                        path="/"
-                        element={
-                            <>
-                                <Wrapper className="App">
-                                    <Banner />
-                                    <NavBar />
-                                    <SocialMedia />
-                                    <main className="main">
+            <Banner />
+            <NavBar />
+            <SocialMedia />
+            <HorizontalScroll>
+                <Router>
+                    <Routes>
+                        <Route
+                            exact
+                            path="/"
+                            element={
+                                <>
+                                    <div className="main bg">
                                         <Home />
-                                        <Canvas className="canvas">
-                                            <OrbitControls enableZoom={false} />
-                                            <ambientLight intensity={0.5} />
-                                            <directionalLight
-                                                position={[-2, 5, 2]}
-                                                intensity={1}
-                                            />
-                                            <Box className="box" />
-                                        </Canvas>
+                                    </div>
+                                    <div className="main bg1">
                                         <Project />
+                                    </div>
+                                    <div className="main bg2">
                                         <About />
+                                    </div>
+                                    <div className="main bg3">
                                         <Skills />
+                                    </div>
+                                    <div className="main bg4">
                                         <Qualification />
+                                    </div>
+                                    <div className="main bg5">
                                         <Portfolio />
-                                    </main>
-                                </Wrapper>
-                            </>
-                        }
-                    />
-                </Routes>
-            </Router>
+                                    </div>
+                                </>
+                            }
+                        />
+                    </Routes>
+                </Router>
+            </HorizontalScroll>
         </div>
     );
 }
-
-const Wrapper = styled.div`
-    canvas {
-        height: 500px;
-    }
-`;
 
 export default App;
