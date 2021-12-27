@@ -1,8 +1,10 @@
+import { Canvas } from "@react-three/fiber";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import Banner from "./components/Banner.js";
+import Box from "./components/Box.js";
 import Home from "./components/Home.js";
 import NavBar from "./components/NavBar.js";
 import Portfolio from "./components/Portfolio.js";
@@ -27,6 +29,9 @@ function App() {
                                 <SocialMedia />
                                 <main className="main">
                                     <Home />
+                                    <Canvas>
+                                        <Box />
+                                    </Canvas>
                                     <Project />
                                     <About />
                                     <Skills />
