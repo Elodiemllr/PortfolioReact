@@ -2,10 +2,10 @@
     background-color: #fff;
     position: fixed;
     height: 100vw;
-    position: relative;
+    position: fixed;
+    z-index: 2;
     background-color: white;
     width: 3em;
-    position: fixed;
     &__content {
         margin-top: 50vh;
         margin-left: 1em;
@@ -14,7 +14,6 @@
         flex-direction: row;
         position: absolute;
         left: 10px;
-        cursor: pointer;
     }
 
     &__lines {
@@ -76,7 +75,6 @@
 
     &__close {
         font-size: 1.8em;
-        cursor: pointer;
     }
     &__link {
         font-size: 2.5em;

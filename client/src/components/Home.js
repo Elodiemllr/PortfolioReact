@@ -16,7 +16,7 @@ const Home = () => {
                     className="home__scroll__button button--flex"
                 >
                     <Icon
-                        icon="bi:arrow-down"
+                        icon="iconoir:mouse-scroll-wheel"
                         className="home__scroll__arrow"
                     />
                 </a>
