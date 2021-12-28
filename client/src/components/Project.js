@@ -2,21 +2,15 @@ import React, { useState } from "react";
 import { animated, interpolate, useSprings } from "react-spring";
 import { useGesture } from "react-use-gesture";
 import styled from "styled-components";
-import MobileView from "../images/MobileView.jpg";
-import MobileView2 from "../images/MobileView2.png";
-import MobileView3 from "../images/MobileView3.jpg";
-import MobileView4 from "../images/MobileView4.jpg";
-import MobileView5 from "../images/MobileView5.jpg";
+import Datas from "../data.js";
 import "../styles/Project.scss";
 
-// Manually arrange your images here or create a helper method to randomize.
-const stackOfPhones = [
-    MobileView3,
-    MobileView4,
-    MobileView2,
-    MobileView5,
-    MobileView,
-];
+console.log(Datas);
+
+const img = Datas.map((project) => project.image);
+console.log(img);
+
+const stackOfPhones = { img };
 // BACKGROUND GRADIENT & SECTION CONTAINER
 const PhoneSection = styled.div`
     overflow: hidden;
@@ -64,7 +58,7 @@ const PhoneSection = styled.div`
     }
 `;
 
-const PhoneStack = () => {
+const Project = () => {
     // HELPERS
     const to = (i) => ({
         x: i * 30,
@@ -142,10 +136,13 @@ const PhoneStack = () => {
                     backgroundImage: `url(${stackOfPhones[i]})`,
                 }}
                 id="PhoneScreen" // styling referenced in PhoneStack.css
-            />
+            >
+                {" "}
+                <h1>cc</h1>
+            </animated.div>
         </animated.div>
     ));
     return <PhoneSection>{phones}</PhoneSection>;
 };
 
-export default PhoneStack;
+export default Project;
