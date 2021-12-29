@@ -6,13 +6,10 @@ import Datas from "../data.js";
 import "../styles/Project.scss";
 console.log(Datas);
 
-const img = Datas.map((project) => {
-    return project.image;
+const project = Datas.map((project) => {
+    return project;
 });
-console.log(img);
-
-const stackOfPhones = img;
-console.log(stackOfPhones);
+console.log(project);
 
 // BACKGROUND GRADIENT & SECTION CONTAINER
 const PhoneSection = styled.div`
@@ -78,10 +75,11 @@ const Project = () => {
 
     // MAIN LOGIC
     const [gone] = useState(() => new Set()); // When a phone is removed, it is stored here
-    const [props, set] = useSprings(stackOfPhones.length, (i) => ({
+    const [props, set] = useSprings(project.length, (i) => ({
         ...to(i),
         from: from(i),
-    })); // create a spring for every Phone Item in the FILO stack (First In Last Out)
+    }));
+    // create a spring for every Phone Item in the FILO stack (First In Last Out)
     const bind = useGesture(
         ({
             args: [index],
@@ -115,7 +113,7 @@ const Project = () => {
                     },
                 };
             });
-            if (!down && gone.size === stackOfPhones.length) {
+            if (!down && gone.size === project.length) {
                 setTimeout(() => gone.clear() || set((i) => to(i)), 600);
             }
         }
@@ -136,12 +134,11 @@ const Project = () => {
                 {...bind(i)}
                 style={{
                     transform: interpolate([rot, scale], trans),
-                    backgroundImage: `url(${stackOfPhones[i]})`,
+                    backgroundImage: `url(${project[i].image})`,
                 }}
                 id="PhoneScreen" // styling referenced in PhoneStack.css
             >
-                {" "}
-                <h1>cc</h1>
+                <h1> {project[i].name}</h1>
             </animated.div>
         </animated.div>
     ));

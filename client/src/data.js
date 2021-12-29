@@ -14,7 +14,7 @@ const Datas = [
         name: "Calculatrice",
         description:
             "Un projet simple et rapide à faire mais toujours pratique",
-        image: "/static/media/MobileView2.7f5c4c38.png",
+        image: "/static/media/MobileView.72688786.jpg",
         github: "https://github.com/Elodiemllr/Calculatrice",
         link: "https://gracious-raman-0fb939.netlify.app/?fbclid=IwAR3n53g0-vngST9YOOtU71hETWUBHzaY9gcT1J-eYYdo_qw4qpRKB-WAgPQ",
     },
