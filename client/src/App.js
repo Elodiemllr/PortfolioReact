@@ -7,7 +7,6 @@ import About from "./components/About.js";
 import Banner from "./components/Banner.js";
 import Home from "./components/Home.js";
 import NavBar from "./components/NavBar.js";
-import Portfolio from "./components/Portfolio.js";
 import Project from "./components/Project.js";
 import Qualification from "./components/Qualification.js";
 import Skills from "./components/Skills.js";
@@ -47,9 +46,6 @@ function App() {
                                     </div>
                                     <div className="main bg4">
                                         <Qualification />
-                                    </div>
-                                    <div className="main bg5">
-                                        <Portfolio />
                                     </div>
                                 </>
                             }

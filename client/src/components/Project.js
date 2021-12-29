@@ -4,6 +4,7 @@ import { useGesture } from "react-use-gesture";
 import styled from "styled-components";
 import Datas from "../data.js";
 import "../styles/Project.scss";
+
 console.log(Datas);
 
 const project = Datas.map((project) => {
@@ -135,10 +136,17 @@ const Project = () => {
                 style={{
                     transform: interpolate([rot, scale], trans),
                     backgroundImage: `url(${project[i].image})`,
+                    position: "relative",
                 }}
                 id="PhoneScreen" // styling referenced in PhoneStack.css
             >
-                <h1> {project[i].name}</h1>
+                <div className="phonecontent">
+                    <h1> {project[i].name}</h1>
+                    <button type="button" class="btn btn-dark">
+                        {" "}
+                        <a href={project[i].github}>Site web</a>
+                    </button>
+                </div>
             </animated.div>
         </animated.div>
     ));
