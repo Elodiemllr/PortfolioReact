@@ -4,13 +4,16 @@ import { useGesture } from "react-use-gesture";
 import styled from "styled-components";
 import Datas from "../data.js";
 import "../styles/Project.scss";
-
 console.log(Datas);
 
-const img = Datas.map((project) => project.image);
+const img = Datas.map((project) => {
+    return project.image;
+});
 console.log(img);
 
-const stackOfPhones = { img };
+const stackOfPhones = img;
+console.log(stackOfPhones);
+
 // BACKGROUND GRADIENT & SECTION CONTAINER
 const PhoneSection = styled.div`
     overflow: hidden;
