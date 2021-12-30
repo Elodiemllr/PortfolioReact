@@ -17,45 +17,7 @@ const PhoneSection = styled.div`
     overflow: hidden;
     width: 100%;
     height: 100%;
-    cursor: url("https://img.icons8.com/office/16/000000/0-percents.png") 39 39,
-        auto;
     background-size: 800% 800%;
-    -webkit-animation: LuxuryGradientBG 43s ease infinite;
-    -moz-animation: LuxuryGradientBG 43s ease infinite;
-    animation: LuxuryGradientBG 43s ease infinite;
-    @-webkit-keyframes LuxuryGradientBG {
-        0% {
-            background-position: 0% 63%;
-        }
-        50% {
-            background-position: 100% 38%;
-        }
-        100% {
-            background-position: 0% 63%;
-        }
-    }
-    @-moz-keyframes LuxuryGradientBG {
-        0% {
-            background-position: 0% 63%;
-        }
-        50% {
-            background-position: 100% 38%;
-        }
-        100% {
-            background-position: 0% 63%;
-        }
-    }
-    @keyframes LuxuryGradientBG {
-        0% {
-            background-position: 0% 63%;
-        }
-        50% {
-            background-position: 100% 38%;
-        }
-        100% {
-            background-position: 0% 63%;
-        }
-    }
 `;
 
 const Project = () => {
@@ -129,6 +91,7 @@ const Project = () => {
             }}
             id="PhoneLocation" // styling referenced in PhoneStack.css
         >
+            {" "}
             {/* Bind user's gesture to the phone and inject the index to keep track of which phone is which */}
             <animated.div
                 {...bind(i)}
@@ -149,7 +112,22 @@ const Project = () => {
             </animated.div>
         </animated.div>
     ));
-    return <PhoneSection>{phones}</PhoneSection>;
+    return (
+        <>
+            {" "}
+            <div className="content">
+                <h2>My portfolio</h2>
+                <p className="content__text">
+                    {" "}
+                    J'ai eu l'occasion de réaliser plusieurs projets pendant et
+                    après ma formation. Je vous invite à en découvrir quelques
+                    uns{" "}
+                </p>
+                <div className="content__work"> work </div>
+            </div>
+            <PhoneSection>{phones}</PhoneSection>{" "}
+        </>
+    );
 };
 
 export default Project;

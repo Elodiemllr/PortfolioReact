@@ -1,7 +1,7 @@
 #PhoneLocation {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     will-change: transform;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 32vh; /* Experiment with changing this value to get the phone you want */
-    height: 64vh; /* Experiment with changing this value to get the phone you want */
+    height: 55vh; /* Experiment with changing this value to get the phone you want */
     will-change: transform;
     border-radius: 40px;
     box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.4), 4px 10px 0px rgb(14, 14, 14);
@@ -32,4 +32,35 @@
         height: 70vh; /* Experiment with changing this value to get the phone you want */
         background-size: auto 80%;
     }
+}
+.content {
+    margin: 1em 0 5em 10em;
+    text-align: left;
+    position: relative;
+
+    &__text {
+        width: 60vh;
+        font-size: 1.2em;
+    }
+
+    &__work {
+        font-family: font-file-82132;
+        position: absolute;
+        bottom: -25rem;
+        left: 30vw;
+        z-index: -1;
+        font-size: 48rem;
+        color: #978c9221;
+    }
+}
+h2 {
+    font-family: font-file-82132;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+    font-size: 7.3rem;
+    line-height: 6.7rem;
 }

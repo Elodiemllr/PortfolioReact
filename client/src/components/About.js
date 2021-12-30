@@ -1,10 +1,35 @@
 import React from "react";
+import Typical from "react-typical";
 import "../styles/About.scss";
-
 const About = () => {
     return (
         <div className="aboutsection">
-            <h2 className="section__title">About</h2>
+            <div className="content">
+                <h2>About me</h2>{" "}
+                <div>
+                    <p className="content__text">
+                        Mes qualités :{" "}
+                        <Typical
+                            loop={Infinity}
+                            steps={[
+                                "Sociable",
+                                1000,
+                                "joueuse de battle royale 😎",
+                                1000,
+                                "Enthousiaste",
+                                1000,
+                                "Organisée",
+                                1000,
+                                "Autonome",
+                                1000,
+                            ]}
+                        >
+                            {" "}
+                        </Typical>
+                    </p>
+                </div>
+                <div className="content__work"> work </div>
+            </div>
             <section className="about section" id="about">
                 <div className="about__img">
                     <img src="./img/elodie.jpg" alt="elodie" />
@@ -14,7 +39,7 @@ const About = () => {
                     <div className="about__sub">
                         <span className="about__subtitle">
                             Moi c'est Elodie, une jeune développeuse située au
-                            Luxembourg et passionnée de communication,
+                            Luxembourg, passionnée de communication,
                             programmation et design web.
                         </span>
                     </div>
