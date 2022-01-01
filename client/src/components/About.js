@@ -4,31 +4,31 @@ import "../styles/About.scss";
 const About = () => {
     return (
         <div className="aboutsection">
-            <div className="content">
+            <div className="aboutsection__header">
                 <h2>About me</h2>{" "}
                 <div>
-                    <p className="content__text">
-                        Mes qualités :{" "}
+                    <p className="aboutsection__header__text">
+                        Mes qualités :&nbsp;
                         <Typical
                             loop={Infinity}
                             steps={[
-                                "Sociable",
-                                1000,
-                                "joueuse de battle royale 😎",
-                                1000,
-                                "Enthousiaste",
-                                1000,
-                                "Organisée",
-                                1000,
-                                "Autonome",
-                                1000,
+                                " Sociable",
+                                500,
+                                " joueuse de battle royale",
+                                500,
+                                " Enthousiaste",
+                                500,
+                                " Organisée",
+                                500,
+                                " Autonome",
+                                500,
                             ]}
                         >
                             {" "}
                         </Typical>
                     </p>
                 </div>
-                <div className="content__work"> work </div>
+                <div className="aboutsection__header__title"> About </div>
             </div>
             <section className="about section" id="about">
                 <div className="about__img">

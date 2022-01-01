@@ -115,7 +115,7 @@ const Project = () => {
     return (
         <>
             {" "}
-            <div className="content">
+            <div className="content" id="project">
                 <h2>My portfolio</h2>
                 <p className="content__text">
                     {" "}
