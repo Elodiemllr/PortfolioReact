@@ -1,7 +1,30 @@
 .skills {
+    width: 100%;
+    position: relative;
     &__close &__list {
         height: 0;
         overflow: hidden;
+    }
+
+    &__content {
+        margin: 1em 0 5em 10em !important;
+        text-align: left;
+        position: relative;
+
+        &__text {
+            width: 60vh;
+            font-size: 1.2em;
+        }
+
+        &__title {
+            font-family: font-file-82132;
+            position: absolute;
+            bottom: -25rem;
+            left: 30vw;
+            z-index: -1;
+            font-size: 40rem;
+            color: #978c9221;
+        }
     }
     &__open,
     &__list {
