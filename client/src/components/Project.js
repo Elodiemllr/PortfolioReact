@@ -7,7 +7,7 @@ import "../styles/Project.scss";
 
 console.log(Datas);
 
-const project = Datas.map((project) => {
+const project = Datas.Project.map((project) => {
     return project;
 });
 console.log(project);

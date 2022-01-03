@@ -31,7 +31,8 @@ function App() {
                                 </div>
                                 <div className="main bg1">
                                     <Fragment>
-                                        <Project />
+                                        {" "}
+                                        <Project />{" "}
                                     </Fragment>
                                 </div>
                                 <div className="main bg2">

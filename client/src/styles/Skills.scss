@@ -103,6 +103,10 @@
         display: flex;
         margin: auto;
     }
+    &__scrollcontainer {
+        width: 80vw !important;
+        margin: auto !important;
+    }
 }
 @media screen and (min-width: 568px) {
     .skills {
