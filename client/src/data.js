@@ -1,5 +1,26 @@
 const Datas = {
-    Skills: [{ name: "css" }, { name: "javascript" }],
+    Skills: [
+        { name: "html" },
+        { name: "css" },
+        { name: "javascript" },
+        { name: "React" },
+        { name: "Bootstrap" },
+        { name: "Sass" },
+        { name: "Node Js" },
+        { name: "Express" },
+        { name: "MongoDb" },
+        { name: "Postgres sql" },
+        { name: "Postman" },
+        { name: "vsCode " },
+        { name: "git" },
+        { name: "github" },
+        { name: "Trello" },
+        { name: "Figma" },
+        { name: "Canva" },
+        { name: "Whimsical" },
+        { name: "Gimp" },
+        { name: "Da Vinci" },
+    ],
     Project: [
         {
             id: 1,

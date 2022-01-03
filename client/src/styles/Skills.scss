@@ -107,6 +107,34 @@
         width: 80vw !important;
         margin: auto !important;
     }
+    &__categories {
+        width: 80%;
+        margin: auto;
+    }
+
+    &__front {
+        display: flex;
+        position: relative;
+        h2 {
+            width: 40vw;
+            font-size: 5em;
+            font-weight: 100;
+        }
+        ul {
+            height: 25vw;
+            overflow: scroll;
+            position: absolute;
+            right: 0;
+            bottom: -30%;
+        }
+        li {
+            font-size: 5em;
+            font-family: "Josefin Sans";
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
 }
 @media screen and (min-width: 568px) {
     .skills {
