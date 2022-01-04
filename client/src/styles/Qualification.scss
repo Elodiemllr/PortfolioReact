@@ -33,6 +33,82 @@
             color: #978c9221;
         }
     }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background: #f1f1f1;
+        margin: 100px auto 0;
+        word-break: break-all;
+        border: 1px solid rgba(0, 0, 0, 0.274);
+
+        &__bloc {
+            display: flex;
+        }
+
+        &__tabs {
+            padding: 15px;
+            text-align: center;
+            width: 50%;
+            background: rgba(128, 128, 128, 0.075);
+            cursor: pointer;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+            box-sizing: content-box;
+            position: relative;
+            outline: none;
+        }
+
+        &__tabs:not(:last-child) {
+            border-right: 1px solid rgba(0, 0, 0, 0.274);
+        }
+
+        &__tabsActive {
+            background: white;
+            border-bottom: 1px solid transparent;
+        }
+
+        &__tabsActive::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% + 2px);
+            height: 5px;
+            background: rgb(88, 147, 241);
+        }
+    }
+    &__items {
+        flex-grow: 1;
+
+        &__content {
+            background: white;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            display: none;
+            h2 {
+                padding: 0px 0 5px 0px;
+            }
+            hr {
+                width: 100px;
+                height: 2px;
+                background: #222;
+                margin-bottom: 5px;
+            }
+            p {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .active__items {
+            display: block;
+        }
+    }
 }
 
 .cd-h-timeline__events {
@@ -49,53 +125,4 @@
     opacity: 0;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
-}
-
-.cd-h-timeline__event--selected {
-    // selected event info
-    position: relative;
-    z-index: 2;
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.cd-h-timeline__event--enter-right,
-.cd-h-timeline__event--leave-right {
-    // animate event info
-    animation-name: cd-enter-right;
-}
-
-.cd-h-timeline__event--enter-left,
-.cd-h-timeline__event--leave-left {
-    // animate event info
-    animation-name: cd-enter-left;
-}
-
-.cd-h-timeline__event--leave-right,
-.cd-h-timeline__event--leave-left {
-    animation-direction: reverse;
-}
-
-@keyframes cd-enter-right {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-@keyframes cd-enter-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
 }

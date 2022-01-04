@@ -1,27 +1,13 @@
-import React, { useState } from "react";
-import { Timeline } from "react-beautiful-horizontal-timeline";
-import Datas from "../data.js";
+import { useState } from "react";
 import "../styles/Qualification.scss";
 
-const myList = Datas.items.map((items) => {
-    return [
-        <div class="cd-h-timeline__event-content container">
-            <h2 class="cd-h-timeline__event-title">{items.title}</h2>
-            <em class="cd-h-timeline__event-date">{items.cardTitle}</em>
-            <p class="cd-h-timeline__event-description color-contrast-medium">
-                {items.cardDetailedText}
-            </p>
-        </div>,
-    ];
-});
-
 const Qualification = () => {
-    const [labelWidth, setlabelWidth] = useState(240);
-    const [amountMove, setamountMove] = useState(350);
-    const [lineColor, setlineColor] = useState("#010101");
-    const [eventTextAlignCenter, seteventTextAlignCenter] = useState(true);
-    const [showSlider, setshowSlider] = useState(true);
-    const [arrowsSize, setarrowsSize] = useState(false);
+    const [toggleState, setToggleState] = useState(1);
+
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
+
     return (
         <section className="qualification section" id="qualification">
             <div className="qualification__content">
@@ -35,46 +21,71 @@ const Qualification = () => {
                     Qualification{" "}
                 </div>
             </div>
-
-            {/*Timeline */}
-            <div className="cd-h-timeline  margin-bottom-md">
-                {/*fin du Timeline container */}
-                {/*début timeline events */}
-                <div class="cd-h-timeline__events">
-                    <ol>
-                        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
-                            <div class="cd-h-timeline__event-content container">
-                                <h2 class="cd-h-timeline__event-title">
-                                    Horizontal Timeline
-                                </h2>
-                                <em class="cd-h-timeline__event-date">
-                                    January 16th, 2014
-                                </em>
-                                <p class="cd-h-timeline__event-description color-contrast-medium">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum praesentium officia,
-                                    fugit recusandae ipsa, quia velit nulla
-                                    adipisci? Consequuntur aspernatur at, eaque
-                                    hic repellendus sit dicta consequatur quae,
-                                    ut harum ipsam molestias maxime non nisi
-                                    reiciendis eligendi! Doloremque quia
-                                    pariatur harum ea amet quibusdam quisquam,
-                                    quae, temporibus dolores porro doloribus.
-                                </p>
-                            </div>
-                        </li>
-                    </ol>
+            <div>
+                <div className="qualification__container">
+                    <div className="qualification__container__bloc">
+                        <button
+                            className={
+                                toggleState === 1
+                                    ? "qualification__container__tabsActive"
+                                    : "qualification__container__tabs"
+                            }
+                            onClick={() => toggleTab(1)}
+                        >
+                            2016
+                        </button>
+                        <button
+                            className={
+                                toggleState === 2
+                                    ? "qualification__container__tabsActive"
+                                    : "qualification__tabs"
+                            }
+                            onClick={() => toggleTab(2)}
+                        >
+                            2018
+                        </button>
+                        <button
+                            className={
+                                toggleState === 3
+                                    ? "qualification__container__tabsActive"
+                                    : "qualification__tabs"
+                            }
+                            onClick={() => toggleTab(3)}
+                        >
+                            2019
+                        </button>
+                    </div>
+                </div>
+                <div className="qualification__items">
+                    <div
+                        className={
+                            toggleState === 1
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> z</h2> <hr /> <p> z</p>
+                    </div>
+                    <div
+                        className={
+                            toggleState === 2
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> s</h2> <hr /> <p> s</p>
+                    </div>
+                    <div
+                        className={
+                            toggleState === 3
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> d</h2> <hr /> <p> d</p>
+                    </div>
                 </div>
             </div>
-            <Timeline
-                myList={myList}
-                labelWidth={labelWidth}
-                amountMove={amountMove}
-                lineColor={lineColor}
-                eventTextAlignCenter={eventTextAlignCenter}
-                showSlider={showSlider}
-                arrowsSize={arrowsSize}
-            ></Timeline>
         </section>
     );
 };
