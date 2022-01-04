@@ -29,19 +29,19 @@ function App() {
                                 <div className="main bg">
                                     <Home />
                                 </div>
-                                <div className="main bg1">
+                                <div className="main bg1 contenue">
                                     <Fragment>
                                         {" "}
                                         <Project />{" "}
                                     </Fragment>
                                 </div>
-                                <div className="main bg2">
+                                <div className="main bg2 contenue">
                                     <About />
                                 </div>
-                                <div className="main bg3">
+                                <div className="main bg3 contenue">
                                     <Skills />
                                 </div>
-                                <div className="main bg4">
+                                <div className="main bg4 contenue">
                                     <Qualification />
                                 </div>
                             </>

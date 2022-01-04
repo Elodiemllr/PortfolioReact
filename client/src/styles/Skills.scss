@@ -1,6 +1,18 @@
 .skills {
     width: 100%;
     position: relative;
+
+    &__title {
+        font-family: font-file-82132;
+        letter-spacing: 0.2em;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: -10px;
+        font-size: 7.3rem !important;
+        line-height: 6.7rem;
+    }
     &__close &__list {
         height: 0;
         overflow: hidden;
@@ -121,11 +133,11 @@
             font-weight: 100;
         }
         ul {
-            height: 25vw;
+            height: 35vw;
             overflow: scroll;
             position: absolute;
             right: 0;
-            bottom: -30%;
+            top: -13em;
         }
         li {
             font-size: 5em;
@@ -136,6 +148,7 @@
         }
     }
 }
+
 @media screen and (min-width: 568px) {
     .skills {
         &__content {

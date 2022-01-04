@@ -21,6 +21,38 @@ const Datas = {
         { name: "Gimp" },
         { name: "Da Vinci" },
     ],
+    items: [
+        {
+            title: "2016",
+            cardTitle: "2016 Lycée Maryse Bastié",
+            cardDetailedText: "Bac Accueil relations clients et usagers",
+        },
+        {
+            title: "2018",
+            cardTitle: "Force de vente",
+            cardDetailedText:
+                "Force de vente dans un magasin de cosmétique, France",
+        },
+        {
+            title: "2019",
+            cardTitle: "Assistante commercial",
+            cardDetailedText:
+                "Assistante commercial pour easySteelSheds, Luxembourg",
+        },
+        {
+            title: "2020",
+            cardTitle: "Ecole O'clock",
+            cardDetailedText:
+                "Titre professionnel 'Développeur web et web mobile",
+        },
+        {
+            title: "2021",
+            cardTitle: "Opquast",
+            cardDetailedText:
+                "Certification Opquast, maîtrise de la qualité web",
+        },
+    ],
+
     Project: [
         {
             id: 1,

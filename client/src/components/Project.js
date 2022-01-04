@@ -116,7 +116,7 @@ const Project = () => {
         <>
             {" "}
             <div className="content" id="project">
-                <h2>My portfolio</h2>
+                <h2 className="content__title">My portfolio</h2>
                 <p className="content__text">
                     {" "}
                     J'ai eu l'occasion de réaliser plusieurs projets pendant et

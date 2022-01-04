@@ -1,86 +1,101 @@
+@import "../../node_modules/react-beautiful-horizontal-timeline/card.css";
+
 .qualification {
-    &__tabs {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: var(--mb-2);
-        justify-content: center;
-    }
-    &__button {
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-medium);
-        cursor: pointer;
-    }
-    &__button:hover {
-        color: var(--first-color);
-    }
-    &__icon {
-        font-size: 1.8rem;
-        margin-right: var(--mb-0-25);
-    }
-    &__data {
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        column-gap: 1.5rem;
-        width: 100%;
-        margin: auto;
-        height: 5rem;
-    }
-    &__title {
-        font-size: var(--normal-font-size);
-        font-weight: var(--font-medium);
-    }
-    &__subtitle {
-        display: inline-block;
-        font-size: var(--small-font-size);
-    }
-    &__calendar {
-        font-size: var(--smaller-font-size);
-        color: --text-color-light;
-    }
-    &__rounder {
-        display: inline-block;
-        width: 13px;
-        height: 13px;
-        background-color: var(--first-color);
-        border-radius: 50%;
-    }
-    &__line {
-        display: block;
-        width: 1px;
-        height: 100%;
-        background-color: var(--first-color);
-        transform: translate(6px, -7px);
-    }
-}
-#education__info {
-    margin-left: 1em;
-}
+    width: 100%;
+    &__content {
+        margin: 1em 0 5em 10em !important;
+        text-align: left;
+        position: relative;
+        h2 {
+            font-family: font-file-82132;
+            letter-spacing: 0.2em;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: -10px;
+            font-size: 7.3rem;
+            line-height: 6.7rem;
+        }
 
-.qualification__active[data-content] {
-    display: block;
-}
+        &__text {
+            width: 60vh;
+            font-size: 1.2em;
+        }
 
-.qualification__button.qualification__active {
-    color: var(--first-color);
-}
-
-@media screen and (min-width: 568px) {
-    .qualification {
-        &__sections {
-            display: grid;
-            grid-template-columns: 0.6fr;
-            justify-content: center;
+        &__title {
+            font-family: font-file-82132;
+            position: absolute;
+            bottom: -20rem;
+            left: 30vw;
+            z-index: -1;
+            font-size: 30rem;
+            color: #978c9221;
         }
     }
 }
 
-@media screen and (min-width: 768px) {
-    .qualification {
-        &__button {
-            margin: 0 var(--mb-1);
-        }
-        &__sections {
-            grid-template-columns: 0.5fr;
-        }
+.cd-h-timeline__events {
+    position: relative;
+}
+
+.cd-h-timeline__event {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.cd-h-timeline__event--selected {
+    // selected event info
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cd-h-timeline__event--enter-right,
+.cd-h-timeline__event--leave-right {
+    // animate event info
+    animation-name: cd-enter-right;
+}
+
+.cd-h-timeline__event--enter-left,
+.cd-h-timeline__event--leave-left {
+    // animate event info
+    animation-name: cd-enter-left;
+}
+
+.cd-h-timeline__event--leave-right,
+.cd-h-timeline__event--leave-left {
+    animation-direction: reverse;
+}
+
+@keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
