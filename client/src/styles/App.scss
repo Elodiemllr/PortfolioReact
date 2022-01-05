@@ -5,8 +5,17 @@
 .App {
     width: 100vw;
     height: 100vw;
-    cursor: url("https://img.icons8.com/office/16/000000/0-percents.png") 39 39,
-        auto;
+
+    &__content {
+        position: relative;
+        overflow: auto;
+        padding-bottom: 40px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background-color: #f8f8f8;
+    }
 }
 .main {
     width: 100vw;

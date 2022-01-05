@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import "../styles/About.scss";
 const About = () => {
     return (
-        <div className="aboutsection">
+        <div className="aboutsection" id="about">
             <div className="aboutsection__header">
                 <h2 className="aboutsection__title">About me</h2>{" "}
                 <div>

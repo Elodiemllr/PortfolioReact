@@ -58,39 +58,27 @@ const NavBar = () => {
                     />
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="menu__link">
+                            <a href="#project" className="menu__link">
+                                Work
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#about" className="menu__link">
                                 About
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="menu__link">
+                            <a href="#skills" className="menu__link">
                                 Skills
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="menu__link">
-                                Qualification
-                            </a>
-                        </li>
-                        <li className="nav__item">
                             <a
-                                href="#home"
+                                href="#qualification"
                                 className="menu__link"
                                 id="nav__cat"
                             >
-                                Work
-                                <a href="#" className="subLink">
-                                    {" "}
-                                    Work 1
-                                </a>
-                                <a href="#" className="subLink">
-                                    {" "}
-                                    Work 2
-                                </a>
-                                <a href="#" className="subLink">
-                                    {" "}
-                                    Work 3
-                                </a>
+                                Qualification
                             </a>
                         </li>
                     </ul>

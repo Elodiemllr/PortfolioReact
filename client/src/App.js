@@ -15,17 +15,18 @@ import "./styles/App.scss";
 function App() {
     return (
         <div className="App">
-            <Banner />
-            <NavBar />
-            <SocialMedia />
-
+            <div className="App__navigation">
+                <Banner />
+                <NavBar />
+                <SocialMedia />
+            </div>
             <Router>
                 <Routes>
                     <Route
                         exact
                         path="/"
                         element={
-                            <>
+                            <div className="App__content">
                                 <div className="main bg">
                                     <Home />
                                 </div>
@@ -44,7 +45,7 @@ function App() {
                                 <div className="main bg4 contenue">
                                     <Qualification />
                                 </div>
-                            </>
+                            </div>
                         }
                     />
                 </Routes>

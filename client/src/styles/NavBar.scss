@@ -1,19 +1,33 @@
 .navBar {
     background-color: #fff;
     position: fixed;
-    height: 100vw;
-    position: fixed;
+    height: 100vh;
     z-index: 2;
     background-color: white;
     width: 3em;
+    opacity: 1;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    transition: margin-right 2s;
+
     &__content {
-        margin-top: 50vh;
         margin-left: 1em;
         transform: translateY(-50%);
         display: flex;
         flex-direction: row;
         position: absolute;
         left: 10px;
+        cursor: pointer;
     }
 
     &__lines {
@@ -51,9 +65,26 @@
     position: fixed;
     height: 100vw;
     position: relative;
-    background-color: white;
     width: 8em;
     position: fixed;
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+    width: 3em;
+    opacity: 1;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .showNav {
@@ -75,10 +106,17 @@
 
     &__close {
         font-size: 1.8em;
+        cursor: pointer;
+        color: #b65d62fa;
     }
     &__link {
         font-size: 2.5em;
         color: black;
+        text-decoration: none;
+    }
+    &__link:hover {
+        font-size: 2.5em;
+        color: #b65d62fa;
         text-decoration: none;
     }
 }
@@ -86,11 +124,4 @@
 #nav__cat {
     display: flex;
     flex-direction: column;
-}
-
-.subLink {
-    font-size: 0.5em;
-    color: black;
-    text-decoration: none;
-    margin: 0.5em;
 }

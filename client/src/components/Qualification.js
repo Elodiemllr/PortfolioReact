@@ -121,7 +121,12 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> d</h2> <span> date</span> <p> d</p>
+                        <h2> d</h2>{" "}
+                        <span className="qualification__items__content__span">
+                            {" "}
+                            date
+                        </span>{" "}
+                        <p> d</p>
                     </div>
                     <div
                         className={
