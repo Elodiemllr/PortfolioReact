@@ -19,7 +19,7 @@
 }
 .main {
     width: 100vw;
-    height: 55vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -220,11 +220,6 @@ img {
     margin: 1em;
 }
 
-/*class*/
-.section {
-    padding: 2rem 0 4rem;
-}
-
 .section__title {
     font-size: var(--big-font-size);
 }
@@ -252,10 +247,19 @@ img {
 @media screen and (max-width: 767px) {
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
+    }
+
+    .bg2 {
+        height: fit-content;
+        margin: auto;
+    }
+
+    .main {
+        margin: auto;
     }
 }
 

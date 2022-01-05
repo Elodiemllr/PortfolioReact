@@ -92,3 +92,58 @@
         margin-inline-end: 0px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .aboutsection {
+        &__title {
+            font-size: 3em;
+            margin-bottom: 0;
+            line-height: 1.5em;
+        }
+        &__header {
+            margin: 0 7em;
+            text-align: left;
+            position: relative;
+            &__text {
+                width: fit-content;
+            }
+            &__title {
+                z-index: 1;
+                font-size: 5em;
+                right: 23vw;
+                color: #a8a8a8d2;
+                left: -23px;
+                bottom: -6em;
+            }
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            &__img {
+                width: 100%;
+                height: fit-content;
+                margin: 2em auto;
+
+                img {
+                    width: inherit;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+
+            &__subtitle {
+                font-size: 27px;
+                font-weight: bold;
+            }
+            &__content {
+                width: 100%;
+                margin: 0 2.3em;
+            }
+            &__sub {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}

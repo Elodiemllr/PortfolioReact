@@ -10,7 +10,7 @@
         position: relative;
         margin-bottom: 40px;
         left: -10px;
-        font-size: 7.3rem !important;
+        font-size: 7.3rem;
         line-height: 6.7rem;
     }
     &__close &__list {
@@ -19,7 +19,7 @@
     }
 
     &__content {
-        margin: 1em 0 5em 10em !important;
+        margin: 1em 0 5em 10em;
         text-align: left;
         position: relative;
 
@@ -157,10 +157,34 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .skills {
         &__title {
-            font-size: var(--normal-font-size);
+            font-size: 3em;
+            margin-bottom: 0;
+            line-height: 1.5em;
+        }
+        &__content {
+            margin: 0 7em;
+            &__text {
+                width: fit-content;
+            }
+            &__work {
+                display: none;
+            }
+            &__title {
+                display: none;
+            }
+        }
+
+        &__front {
+            li {
+                font-size: 2em;
+            }
+            ul {
+                position: initial;
+                height: 30vh;
+            }
         }
     }
 }

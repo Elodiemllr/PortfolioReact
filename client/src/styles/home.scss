@@ -72,3 +72,9 @@
     transition: box-shadow 0.5s;
     will-change: transform;
 }
+
+@media screen and (max-width: 400px) {
+    .home__container {
+        height: auto;
+    }
+}
