@@ -38,7 +38,7 @@ const Qualification = () => {
                             className={
                                 toggleState === 2
                                     ? "qualification__container__tabsActive"
-                                    : "qualification__tabs"
+                                    : "qualification__container__tabs"
                             }
                             onClick={() => toggleTab(2)}
                         >
@@ -48,11 +48,32 @@ const Qualification = () => {
                             className={
                                 toggleState === 3
                                     ? "qualification__container__tabsActive"
-                                    : "qualification__tabs"
+                                    : "qualification__container__tabs"
                             }
                             onClick={() => toggleTab(3)}
                         >
                             2019
+                        </button>
+                        <button
+                            className={
+                                toggleState === 4
+                                    ? "qualification__container__tabsActive"
+                                    : "qualification__container__tabs"
+                            }
+                            onClick={() => toggleTab(4)}
+                        >
+                            2020
+                        </button>
+
+                        <button
+                            className={
+                                toggleState === 5
+                                    ? "qualification__container__tabsActive"
+                                    : "qualification__container__tabs"
+                            }
+                            onClick={() => toggleTab(5)}
+                        >
+                            2021
                         </button>
                     </div>
                 </div>
@@ -64,7 +85,7 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> z</h2> <hr /> <p> z</p>
+                        <h2> z</h2> <p> z</p>
                     </div>
                     <div
                         className={
@@ -73,7 +94,7 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> s</h2> <hr /> <p> s</p>
+                        <h2> s</h2> <p> s</p>
                     </div>
                     <div
                         className={
@@ -82,7 +103,34 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> d</h2> <hr /> <p> d</p>
+                        <h2> d</h2> <p> d</p>
+                    </div>
+                    <div
+                        className={
+                            toggleState === 4
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> sssd</h2> <p> ssd</p>
+                    </div>
+                    <div
+                        className={
+                            toggleState === 5
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> d</h2> <span> date</span> <p> d</p>
+                    </div>
+                    <div
+                        className={
+                            toggleState === 6
+                                ? "qualification__items__content  active__items"
+                                : "qualification__items__content"
+                        }
+                    >
+                        <h2> ddd</h2> <p> dsfed</p>
                     </div>
                 </div>
             </div>
