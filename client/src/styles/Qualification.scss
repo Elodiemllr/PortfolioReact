@@ -125,3 +125,16 @@
         }
     }
 }
+
+@media screen and (min-width: 968px) {
+    .qualification__content {
+        h2 {
+            font-size: 5rem;
+        }
+        &__title {
+            font-size: 15em;
+            bottom: -2rem;
+            z-index: 1;
+        }
+    }
+}

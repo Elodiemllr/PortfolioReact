@@ -39,6 +39,7 @@
     position: relative;
     &__title {
         font-family: font-file-82132;
+        z-index: 1;
         letter-spacing: 0.2em;
         font-weight: 400;
         margin-top: 0;
@@ -58,10 +59,12 @@
         position: absolute;
         bottom: -25rem;
         left: 30vw;
-        z-index: -1;
         font-size: 48rem;
         color: #978c9221;
     }
+}
+.sc-bdVaJa {
+    z-index: 5;
 }
 
 @media screen and (max-width: 400px) {
@@ -97,5 +100,18 @@
         will-change: transform;
         border-radius: 40px;
         box-shadow: 20px 10px 5px rgb(0 0 0 / 40%), 4px 10px 0px #0e0e0e;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .content {
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__work {
+            font-size: 15em;
+            bottom: -2rem;
+        }
     }
 }

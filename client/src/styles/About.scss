@@ -16,7 +16,7 @@
         line-height: 6.7rem;
     }
     &__header {
-        margin: 1em 0 5em 10em;
+        margin: 5em 7em;
         text-align: left;
         position: relative;
         &__text {
@@ -30,7 +30,6 @@
             position: absolute;
             bottom: -25rem;
             left: 18vw;
-            z-index: -1;
             font-size: 35em;
             color: #978c9221;
         }
@@ -144,6 +143,26 @@
                 width: 100%;
                 margin-left: 0;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .aboutsection {
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__header__title {
+            font-size: 15em;
+            bottom: -9rem;
+        }
+    }
+
+    .about {
+        &__description {
+            overflow: scroll;
+            height: 8em;
         }
     }
 }
