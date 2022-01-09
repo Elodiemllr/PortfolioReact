@@ -6,28 +6,26 @@ const About = () => {
         <div className="aboutsection" id="about">
             <div className="aboutsection__header">
                 <h2 className="aboutsection__title">About me</h2>{" "}
-                <div>
-                    <p className="aboutsection__header__text">
-                        Mes qualités :&nbsp;
-                        <Typical
-                            loop={Infinity}
-                            steps={[
-                                " Sociable",
-                                500,
-                                " joueuse de battle royale",
-                                500,
-                                " Enthousiaste",
-                                500,
-                                " Organisée",
-                                500,
-                                " Autonome",
-                                500,
-                            ]}
-                        >
-                            {" "}
-                        </Typical>
-                    </p>
-                </div>
+                <p className="aboutsection__header__text">
+                    Mes qualités :&nbsp;
+                    <Typical
+                        loop={Infinity}
+                        steps={[
+                            " Sociable",
+                            500,
+                            " joueuse de battle royale",
+                            500,
+                            " Enthousiaste",
+                            500,
+                            " Organisée",
+                            500,
+                            " Autonome",
+                            500,
+                        ]}
+                    >
+                        {" "}
+                    </Typical>
+                </p>
                 <div className="aboutsection__header__title"> About </div>
             </div>
             <section className="about section" id="about">
@@ -59,15 +57,15 @@ const About = () => {
                     </p>
                     <div className="about__info"></div>
                     <br />
-                    <div className="about__buttons">
-                        <a
-                            download=""
-                            href="https://www.canva.com/design/DAExxQ715Qo/dYY_hdzcU7QxezoOi_vf4Q/view?utm_content=DAExxQ715Qo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
-                            className="button button--flex"
-                        >
-                            Télecharge mon CV ici
-                        </a>
-                    </div>
+                </div>
+                <div className="about__buttons">
+                    <a
+                        download=""
+                        href="https://www.canva.com/design/DAExxQ715Qo/dYY_hdzcU7QxezoOi_vf4Q/view?utm_content=DAExxQ715Qo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                        className="button button--flex"
+                    >
+                        Télecharge mon CV ici
+                    </a>
                 </div>
             </section>
         </div>
