@@ -1,7 +1,7 @@
 #PhoneLocation {
     position: absolute;
-    width: 100vw;
-    height: fit-content;
+    max-width: fit-content;
+    max-height: fit-content;
     will-change: transform;
     display: flex;
     align-items: center;
@@ -26,92 +26,54 @@
     border-radius: 40px;
     box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.4), 4px 10px 0px rgb(14, 14, 14);
 }
-@media (max-height: 600px) {
-    #PhoneScreen {
-        width: 35vh; /* Experiment with changing this value to get the phone you want */
-        height: 70vh; /* Experiment with changing this value to get the phone you want */
-        background-size: auto 80%;
-    }
+
+.sc-bdVaJa {
+    position: relative;
+    top: 10em;
+    overflow: initial !important;
 }
 .content {
-    margin: 5em 7em;
-    text-align: left;
-    position: relative;
     &__title {
         font-family: font-file-82132;
-        z-index: 1;
-        letter-spacing: 0.2em;
-        font-weight: 400;
-        margin-top: 0;
+
         position: relative;
-        margin-bottom: 40px;
-        left: -10px;
-        font-size: 7.3rem;
-        line-height: 6.7rem;
-    }
-    &__text {
-        width: 60vh;
-        font-size: 1.2em;
     }
 
     &__work {
-        font-family: font-file-82132;
         position: absolute;
-        bottom: -25rem;
-        left: 30vw;
-        font-size: 48rem;
+        font-family: font-file-82132;
         color: #978c9221;
     }
 }
-.sc-bdVaJa {
-    z-index: 5;
-}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .content {
+        margin-left: 3.5em;
+
         &__title {
-            font-size: 3em;
-            margin-bottom: 0;
-            line-height: 1.5em;
+            font-size: 2.5em;
         }
 
-        &__text {
-            width: fit-content;
-        }
         &__work {
-            display: none;
+            font-size: 5em;
+            right: 0;
+            bottom: -1.3em;
         }
-    }
-    .jQCOYP {
-        width: 80% !important;
-        margin: auto !important;
-    }
-    #PhoneLocation {
-        width: inherit;
     }
 
     #PhoneScreen {
-        height: 40vh;
-        width: 45vw;
-        background: #242424;
-        background-size: auto 86%;
-        background-repeat: no-repeat;
-        background-position: center;
-        will-change: transform;
-        border-radius: 40px;
-        box-shadow: 20px 10px 5px rgb(0 0 0 / 40%), 4px 10px 0px #0e0e0e;
+        height: 20em;
+        width: 10em;
     }
+}
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 968px) {
-    .content {
-        &__title {
-            font-size: 5rem;
-        }
+}
 
-        &__work {
-            font-size: 15em;
-            bottom: -2rem;
-        }
-    }
+@media screen and (min-width: 1024px) {
 }

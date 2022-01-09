@@ -2,283 +2,45 @@
     display: none;
 }
 
-.App {
-    width: 100vw;
-    height: 100vw;
+/*general*/
 
-    &__content {
-        position: relative;
-        overflow: auto;
-        padding-bottom: 40px;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        background-color: #f8f8f8;
-    }
+.App {
+    background-color: #f8f8f8;
+    width: 100vw;
+    overflow: hidden;
 }
 .main {
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
 }
-.bg1 {
-    display: flex;
-    flex-direction: column;
+html {
+    scroll-behavior: smooth;
 }
 
 .contenue {
-    margin: 6em 0;
+    margin: 2em auto;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-:root {
-    --header-height: ;
-
-    /*color*/
-    --hue-color: 47;
-
-    --first-color: #e77d826c; /*color jaune de base*/
-    --first-color-second: hsl(
-        var(--hue-color),
-        69%,
-        61%
-    ); /*color jaune plus neutre */
-    --first-color-alt: hsl(var(--hue-color), 90%, 50%); /* plus foncé */
-    --first-color-lighter: #b65d62fa;
-    --title-color: hsl(var(--hue-color), 8%, 15%); /* brun foncé*/
-    --text-color: rgb(34, 34, 34); /* brun clair*/
-    --text-color-light: hsl(var(--hue-color), 8%, 65%); /*plus clair*/
-    --input-color: hsl(var(--hue-color), 70%, 96%); /*blanc cassé*/
-    --body-color: #f6f6f6; /* blanc*/
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%); /* beige*/
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%); /* plus foncé*/
-
-    --body-font: "Roboto Condensed", sans-serif;
-
-    --big-font-size: 1rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 0.9rem;
-    --small-font-size: 0.8rem;
-    --smaller-font-size: 0.75rem;
-
-    --font-medium: 500;
-    --font-semi-bold: 600;
-
-    /*.25rem = 4px, .5rem = 8px etc*/
-    --mb-0-25: 0.25rem;
-    --mb-0-5: 0.5rem;
-    --mb-0-75: 0.75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
-
-    /*z index*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 100;
-}
-
-@media screen and (min-width: 968px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.7rem;
-        --h3-font-size: 1.5rem;
-        --normal-font-size: 1.25rem;
-        --small-font-size: 1rem;
-        --smaller-font-size: 0.8rem;
+@media screen and (max-width: 450px) {
+    .main {
+        width: 80vw;
+        height: 100vh;
+    }
+    .card {
+        max-width: 75vw;
+        max-height: 50vh;
+    }
+    .contenue {
+        margin: 2em auto;
     }
 }
-
-/*dark theme var*/
-body.dark-theme {
-    --first-color: hsl(var(--hue-color), 6%, 13%);
-
-    --first-color-second: hsl(var(--hue-color), 30%, 8%);
-    --title-color: hsl(var(--hue-color), 95%, 57%); /*color jaune de base*/
-    --text-color: hsl(var(--hue-color), 8%, 75%);
-    --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 100%, 2%);
-    --container-color: hsl(var(--hue-color), 29%, 16%);
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-}
-
-/*general*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*buttons*/
-.button {
-    display: inline-block;
-    background-color: var(--title-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-weight: var(--font-medium);
-}
-
-.button:hover {
-    background-color: var(--first-color-alt);
-}
-
-.button--flex {
-    position: relative;
-    margin: 1em;
-}
-
-/*buttons*/
-.button {
-    display: inline-block;
-    background-color: var(--title-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-weight: var(--font-medium);
-}
-
-.button:hover {
-    background-color: var(--first-color-alt);
-}
-
-.button--flex {
-    position: relative;
-    margin: 1em;
-}
-
-.section__title {
-    font-size: var(--big-font-size);
-}
-.section__subtitle {
-    display: block;
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-3);
-}
-
-.section__title,
-.section__subtitle {
-    text-align: center;
-}
-
-//others
-#home {
-    padding: 6rem 0 0;
-}
-
-.grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
 @media screen and (max-width: 767px) {
 }
 
-@media screen and (max-width: 400px) {
-    .container {
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
-    }
-
-    .bg2 {
-        height: fit-content;
-        margin: auto;
-    }
-
-    .main {
-        margin: auto;
-    }
+@media screen and (min-width: 768px) {
 }
 
-@media screen and (min-width: 768px) {
-    .header,
-    .main,
-    .footer__container {
-        padding: 0 1rem;
-    }
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (min-width: 968px) {
 }
 
 @media screen and (min-width: 1024px) {
-    .header,
-    .main,
-    .footer__container {
-        padding: 0;
-    }
 }

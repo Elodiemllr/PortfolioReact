@@ -1,44 +1,5 @@
 .qualification {
-    width: 100%;
-    &__content {
-        margin: 1em 0 5em 10em;
-        text-align: left;
-        position: relative;
-        h2 {
-            font-family: font-file-82132;
-            letter-spacing: 0.2em;
-            font-weight: 400;
-            margin-top: 0;
-            position: relative;
-            margin-bottom: 40px;
-            left: -10px;
-            font-size: 7.3rem;
-            line-height: 6.7rem;
-        }
-
-        &__text {
-            width: 60vh;
-            font-size: 1.2em;
-        }
-
-        &__title {
-            font-family: font-file-82132;
-            position: absolute;
-            bottom: -20rem;
-            left: 30vw;
-            z-index: -1;
-            font-size: 30rem;
-            color: #978c9221;
-        }
-    }
-
     &__container {
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
-        margin: 2em auto;
-        word-break: break-all;
-
         &__bloc {
             display: flex;
         }
@@ -100,41 +61,6 @@
         }
         .active__items {
             display: block;
-        }
-    }
-}
-@media screen and (max-width: 400px) {
-    .qualification__content {
-        margin: 0 7em;
-        h2 {
-            font-size: 2.5em;
-            margin-bottom: 0;
-            line-height: 1.5em;
-        }
-        &__text {
-            width: fit-content;
-        }
-    }
-
-    .qualification__container {
-        &__tabs {
-            font-size: smaller;
-        }
-        &__tabsActive {
-            font-size: smaller;
-        }
-    }
-}
-
-@media screen and (min-width: 968px) {
-    .qualification__content {
-        h2 {
-            font-size: 5rem;
-        }
-        &__title {
-            font-size: 15em;
-            bottom: -2rem;
-            z-index: 1;
         }
     }
 }

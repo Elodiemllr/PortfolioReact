@@ -18,7 +18,6 @@
     &__container {
         display: flex !important;
         height: 100vh;
-        min-height: 700px;
         padding-top: 40px;
         padding-bottom: 40px;
         -webkit-box-orient: vertical;
@@ -43,10 +42,6 @@
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        video {
-            max-height: 58vh;
-            width: 100%;
-        }
     }
 
     &__scroll {
@@ -73,8 +68,22 @@
     will-change: transform;
 }
 
-@media screen and (max-width: 400px) {
-    .home__container {
-        height: auto;
+@media screen and (max-width: 450px) {
+    .card {
+        video {
+            max-width: 75vw;
+            max-height: 75vh;
+        }
     }
+}
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 968px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
