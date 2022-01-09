@@ -1,4 +1,14 @@
 .qualification {
+    &__content {
+        &__title {
+            font-family: font-file-82132;
+        }
+        &__subtitle {
+            position: absolute;
+            font-family: font-file-82132;
+            color: #978c9221;
+        }
+    }
     &__container {
         &__bloc {
             display: flex;
@@ -37,21 +47,11 @@
             display: none;
             h2 {
                 font-family: font-file-82132;
-                letter-spacing: 0.2em;
-                font-weight: 400;
-                margin-top: 0;
-                position: relative;
-                margin-bottom: 20px;
-                left: -10px;
-                font-size: 7.3rem;
-                line-height: 6.7rem;
+                letter-spacing: 0.1em;
             }
 
             p {
-                width: 60vh;
-                font-size: 1.2em;
                 font-weight: 200;
-                margin-top: 1.2em !important;
             }
 
             &__span {
@@ -63,4 +63,48 @@
             display: block;
         }
     }
+}
+
+@media screen and (max-width: 450px) {
+    .qualification {
+        &__content {
+            margin-left: 3.5em;
+            position: relative;
+
+            &__title {
+                font-size: 2.5em;
+            }
+
+            &__subtitle {
+                font-size: 5em;
+                right: 0;
+                bottom: 0.4em;
+                max-width: 3em;
+            }
+        }
+
+        &__items {
+            &__title {
+                font-size: 1.5em;
+                margin: auto;
+                width: fit-content;
+            }
+            &__text {
+                font-size: 1.5em;
+                margin: 1em;
+                width: fit-content;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 968px) {
+}
+
+@media screen and (min-width: 1024px) {
 }

@@ -11,12 +11,12 @@ const Qualification = () => {
     return (
         <section className="qualification section" id="qualification">
             <div className="qualification__content">
-                <h2>Qualification</h2>
+                <h2 className="qualification__content__title">Qualification</h2>
                 <p className="qualification__content__text">
                     {" "}
                     Tu trouveras ici ma scolarité et mon éxperiences
                 </p>
-                <div className="qualification__content__title">
+                <div className="qualification__content__subtitle">
                     {" "}
                     Qualification{" "}
                 </div>
@@ -85,7 +85,14 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> z</h2> <p> z</p>
+                        <h2 className="qualification__items__title">
+                            {" "}
+                            Lycée Maryse Bastié
+                        </h2>{" "}
+                        <p className="qualification__items__text">
+                            {" "}
+                            Bac pro Accueil relation client et usagers
+                        </p>
                     </div>
                     <div
                         className={
