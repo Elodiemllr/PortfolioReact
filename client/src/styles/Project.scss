@@ -32,6 +32,8 @@
     top: 10em;
     overflow: initial !important;
     height: fit-content;
+    margin: 0 auto !important;
+    width: 10em !important;
 }
 .content {
     &__title {
@@ -67,7 +69,22 @@
         width: 10em;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 451px) {
+    .content {
+        margin-left: 7em;
+        width: 40em;
+        &__title {
+            font-size: 3.5em;
+        }
+        &__text {
+            font-size: 1.4em;
+        }
+        &__work {
+            font-size: 12em;
+            left: 1.5em;
+            bottom: -0.9em;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
