@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 .main {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 html {
@@ -21,7 +21,7 @@ html {
     margin: 2em auto;
 }
 @media screen and (max-width: 450px) {
-    .main {
+    .contenue {
         width: 80vw;
         height: 100vh;
     }
@@ -31,6 +31,11 @@ html {
     }
     .contenue {
         margin: 2em auto;
+    }
+
+    .sc-bdVaJa {
+        margin: 0 auto;
+        width: 100px;
     }
 }
 @media screen and (max-width: 767px) {
