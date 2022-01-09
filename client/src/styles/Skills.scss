@@ -1,1 +1,50 @@
- 
+.skills {
+    &__title {
+        font-family: font-file-82132;
+    }
+    &__content {
+        position: relative;
+        &__title {
+            position: absolute;
+            font-family: font-file-82132;
+            color: #978c9221;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skills {
+        &__content {
+            margin-left: 3.5em;
+
+            &__title {
+                font-size: 5em;
+                right: 0;
+                bottom: 1.3em;
+            }
+        }
+
+        &__title {
+            font-size: 2.5em;
+        }
+
+        &__front {
+            height: 20em;
+            margin: 2em auto;
+            width: fit-content;
+            overflow: scroll;
+            font-size: 1.3em;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 968px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
