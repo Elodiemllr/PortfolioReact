@@ -1,11 +1,16 @@
 .aboutsection {
     height: fit-content;
+
     &__header {
-        &__title {
-            font-family: font-file-82132;
-            color: #978c9221;
-        }
+        position: relative;
     }
+
+    &__subtitle {
+        font-family: font-file-82132;
+        color: #978c9221;
+        position: absolute;
+    }
+
     &__title {
         font-family: font-file-82132;
     }
@@ -28,16 +33,12 @@
     .aboutsection {
         &__header {
             margin-left: 3.5em;
-            position: relative;
-
-            &__title {
-                font-size: 5em;
-                right: 0;
-                bottom: 0.4em;
-                position: absolute;
-            }
         }
-
+        &__subtitle {
+            font-size: 2em;
+            right: 0;
+            top: -0.6em;
+        }
         &__title {
             font-size: 2.5em;
         }
@@ -56,6 +57,7 @@
     }
 
     .about {
+        margin-top: 1em;
         &__content {
             margin-left: 2em;
             margin-top: 2em;

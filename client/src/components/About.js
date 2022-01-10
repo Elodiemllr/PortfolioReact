@@ -5,7 +5,10 @@ const About = () => {
     return (
         <div className="aboutsection" id="about">
             <div className="aboutsection__header">
-                <h2 className="aboutsection__title">About me</h2>{" "}
+                <h2 className="aboutsection__title">
+                    About me
+                    <p className="aboutsection__subtitle"> About </p>
+                </h2>{" "}
                 <p className="aboutsection__header__text">
                     Mes qualités :&nbsp;
                     <Typical
@@ -26,7 +29,6 @@ const About = () => {
                         {" "}
                     </Typical>
                 </p>
-                <div className="aboutsection__header__title"> About </div>
             </div>
             <section className="about section" id="about">
                 <div className="about__img">

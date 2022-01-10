@@ -11,15 +11,17 @@ const Qualification = () => {
     return (
         <section className="qualification section" id="qualification">
             <div className="qualification__content">
-                <h2 className="qualification__content__title">Qualification</h2>
+                <h2 className="qualification__content__title">
+                    Qualification{" "}
+                    <p className="qualification__content__subtitle">
+                        {" "}
+                        Qualification{" "}
+                    </p>
+                </h2>
                 <p className="qualification__content__text">
                     {" "}
                     Tu trouveras ici ma scolarité et mon éxperiences
                 </p>
-                <div className="qualification__content__subtitle">
-                    {" "}
-                    Qualification{" "}
-                </div>
             </div>
             <div>
                 <div className="qualification__container">

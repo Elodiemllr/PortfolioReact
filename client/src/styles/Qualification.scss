@@ -2,6 +2,7 @@
     &__content {
         &__title {
             font-family: font-file-82132;
+            position: relative;
         }
         &__subtitle {
             position: absolute;
@@ -69,16 +70,15 @@
     .qualification {
         &__content {
             margin-left: 3.5em;
-            position: relative;
 
             &__title {
                 font-size: 2.5em;
             }
 
             &__subtitle {
-                font-size: 5em;
+                font-size: 2em;
                 right: 0;
-                bottom: 0.4em;
+                top: -0.6em;
                 max-width: 3em;
             }
         }

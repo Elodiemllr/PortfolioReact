@@ -116,14 +116,15 @@ const Project = () => {
         <>
             {" "}
             <div className="content" id="project">
-                <h2 className="content__title">My portfolio</h2>
+                <h2 className="content__title">
+                    My portfolio <p className="content__work"> work </p>
+                </h2>
                 <p className="content__text">
                     {" "}
                     J'ai eu l'occasion de réaliser plusieurs projets pendant et
                     après ma formation. Je vous invite à en découvrir quelques
                     uns{" "}
                 </p>
-                <div className="content__work"> work </div>
             </div>
             <PhoneSection>{phones}</PhoneSection>{" "}
         </>

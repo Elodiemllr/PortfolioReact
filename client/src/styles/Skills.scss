@@ -1,9 +1,9 @@
 .skills {
     &__title {
         font-family: font-file-82132;
+        position: relative;
     }
     &__content {
-        position: relative;
         &__title {
             position: absolute;
             font-family: font-file-82132;
@@ -18,9 +18,9 @@
             margin-left: 3.5em;
 
             &__title {
-                font-size: 5em;
+                font-size: 2em;
                 right: 0;
-                bottom: 1.3em;
+                top: -0.6em;
             }
         }
 
