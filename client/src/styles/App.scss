@@ -24,13 +24,12 @@ html {
     .contenue {
         width: 80vw;
         height: 100vh;
+
+        margin: 2em auto;
     }
     .card {
         max-width: 75vw;
         max-height: 50vh;
-    }
-    .contenue {
-        margin: 2em auto;
     }
 
     .sc-bdVaJa {
@@ -38,7 +37,12 @@ html {
         width: 100px;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 451px) {
+    .contenue {
+        margin: 5em auto;
+        width: 80vw;
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 768px) {
