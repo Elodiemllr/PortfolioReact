@@ -37,7 +37,44 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 451px) {
+    .skills {
+        &__content {
+            margin-left: 2em;
+
+            &__title {
+                font-size: 3em;
+                right: 0.7em;
+                bottom: -0.3em;
+            }
+
+            &__text {
+                font-size: 1.4em;
+            }
+        }
+        &__front {
+            height: fit-content;
+            margin: 5em auto;
+            width: 15em;
+            font-size: 1.7em;
+
+            ul {
+                display: flex;
+                overflow-x: scroll;
+                overflow-x: scroll;
+                list-style-type: none;
+            }
+
+            li {
+                margin: auto 1em;
+                width: 15em;
+            }
+        }
+
+        &__title {
+            font-size: 3.5em;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
