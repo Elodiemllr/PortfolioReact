@@ -97,7 +97,38 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 451px) {
+    .qualification {
+        &__content {
+            margin-left: 2em;
+            width: 40em;
+            &__title {
+                font-size: 3.5em;
+            }
+            &__text {
+                font-size: 1.4em;
+            }
+
+            &__subtitle {
+                font-size: 3em;
+                left: 1em;
+                bottom: -0.3em;
+            }
+        }
+
+        &__items {
+            &__title {
+                font-size: 2em;
+                margin: auto;
+                width: fit-content;
+            }
+            &__text {
+                font-size: 2em;
+                margin: 1em;
+                width: fit-content;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
