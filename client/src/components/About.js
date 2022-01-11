@@ -38,9 +38,8 @@ const About = () => {
                     <div className="about__content">
                         <div className="about__sub">
                             <span className="about__subtitle">
-                                Moi c'est Elodie, une jeune développeuse située
-                                au Luxembourg, passionnée de communication,
-                                programmation et design web.
+                                Moi c'est Elodie, passionnée de programmation et
+                                design web.
                             </span>
                         </div>
 

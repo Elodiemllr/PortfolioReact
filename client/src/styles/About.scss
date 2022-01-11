@@ -155,8 +155,58 @@
     }
 }
 
-@media screen and (min-width: 968px) {
-}
-
 @media screen and (min-width: 1024px) {
+    .aboutsection {
+        &__title {
+            font-size: 4.5em;
+        }
+
+        &__subtitle {
+            font-size: 4em;
+            top: -0.8em;
+            right: -1em;
+        }
+    }
+
+    .about {
+        height: inherit;
+
+        &__buttons {
+            margin: auto;
+            padding: 2em 3em;
+
+            a {
+                font-size: 1.5em;
+            }
+        }
+        &__content {
+            overflow: initial;
+            height: fit-content;
+        }
+
+        &__infos {
+            margin: 0 2em;
+            text-align: left;
+        }
+
+        &__img {
+            width: 45%;
+            max-width: none;
+            max-height: 80%;
+            margin: 5em auto;
+        }
+        &__content {
+            height: fit-content;
+            margin: auto;
+        }
+        &__subtitle {
+            font-size: 3vw;
+            font-family: font-file-82132;
+        }
+        &__description {
+            font-size: 1.5vw;
+            overflow: scroll;
+            height: 15vw;
+        }
+    }
 }
