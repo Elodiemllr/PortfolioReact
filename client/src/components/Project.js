@@ -23,8 +23,8 @@ const PhoneSection = styled.div`
 const Project = () => {
     // HELPERS
     const to = (i) => ({
-        x: i * 30,
-        y: i * -30,
+        x: i * 10,
+        y: i * -10,
         scale: 1,
         rot: 10 + Math.random() * 30,
         delay: i * 200,

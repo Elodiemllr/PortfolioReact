@@ -1,9 +1,8 @@
-import { Icon } from "@iconify/react";
 import React from "react";
 import { animated, useSpring } from "react-spring";
 import "../styles/Home.scss";
 import videoElodie from "../video/videoElo.mp4";
-
+import Scroll from "./Scroll.js";
 const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 20,
     (x - window.innerWidth / 2) / 20,
@@ -44,10 +43,7 @@ const Home = () => {
                     href="#project"
                     className="home__scroll__button button--flex"
                 >
-                    <Icon
-                        icon="iconoir:mouse-scroll-wheel"
-                        className="home__scroll__arrow"
-                    />
+                    <Scroll></Scroll>
                 </a>
             </div>
         </section>
