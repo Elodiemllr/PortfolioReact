@@ -1,4 +1,7 @@
-import React, { Fragment } from "react";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -11,8 +14,39 @@ import Qualification from "./components/Qualification.js";
 import Skills from "./components/Skills.js";
 import SocialMedia from "./components/SocialMedia.js";
 import "./styles/App.scss";
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {
+    const slidetoTop = (elem, delay, duration) => {
+        gsap.fromTo(
+            elem,
+            {
+                opacity: 0,
+                y: -200,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top center",
+                    end: "bottom center",
+                },
+            }
+        );
+    };
+    useEffect(() => {
+        slidetoTop(".bg1");
+    }, []);
+    useEffect(() => {
+        slidetoTop(".bg2");
+    }, []);
+    useEffect(() => {
+        slidetoTop(".bg3");
+    }, []);
+    useEffect(() => {
+        slidetoTop(".bg4");
+    }, []);
     return (
         <div className="App">
             <div className="App__navigation">
