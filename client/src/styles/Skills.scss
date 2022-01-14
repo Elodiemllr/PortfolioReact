@@ -10,6 +10,11 @@
             color: #978c9221;
         }
     }
+    &__front {
+        ul {
+            list-style-type: none;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -62,7 +67,6 @@
                 display: flex;
                 overflow-x: scroll;
                 overflow-x: scroll;
-                list-style-type: none;
             }
 
             li {

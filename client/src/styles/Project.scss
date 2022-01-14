@@ -14,6 +14,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    h1 {
+        color: Black;
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    button {
+        margin: 1.2em auto;
+        a {
+            color: white;
+        }
+    }
 }
 #PhoneScreen {
     background: rgb(36, 36, 36);

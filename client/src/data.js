@@ -60,7 +60,7 @@ const Datas = {
 
             description:
                 "By Erika est un faux shop en ligne, inspiré d'une boutique d'une amie",
-            image: "./img/Byerika.png",
+            image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/By-Erika",
             link: "#",
         },
@@ -69,7 +69,7 @@ const Datas = {
             name: "Calculatrice",
             description:
                 "Un projet simple et rapide à faire mais toujours pratique",
-            image: "./img/Calculatrice.jpg",
+            image: "./img/pink.png",
             github: "https://github.com/Elodiemllr/Calculatrice",
             link: "https://gracious-raman-0fb939.netlify.app/?fbclid=IwAR3n53g0-vngST9YOOtU71hETWUBHzaY9gcT1J-eYYdo_qw4qpRKB-WAgPQ",
         },
@@ -78,7 +78,7 @@ const Datas = {
             name: "Fake Movie App",
             description:
                 "Un clone inspiré du géant des platform de vidéo en ligne, Netflix",
-            image: "./img/fakeNetflix.png",
+            image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/FakeMovieApp",
             link: "#",
         },
@@ -88,7 +88,7 @@ const Datas = {
             description:
                 "Un projet de fin d'année, réalisé en équipe avec la méthodologie agile",
 
-            image: "./kodo.jpg",
+            image: "./img/pink.png",
             github: "#",
             link: "https://kodo-ecolo.netlify.app/",
         },
@@ -97,7 +97,7 @@ const Datas = {
             name: "Space share",
             description:
                 "Un réseau social simple avec systeme de connexion, profil et post",
-            image: "./img/spaceshare.png",
+            image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/SocialMedia",
             link: "#",
         },

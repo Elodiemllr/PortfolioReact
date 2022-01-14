@@ -28,7 +28,6 @@
         }
 
         &__tabs {
-            padding: 15px;
             text-align: center;
             width: 50%;
             cursor: pointer;
@@ -45,6 +44,7 @@
         &__content {
             width: 70vw;
             margin: auto;
+            text-align: center;
             display: none;
             h2 {
                 font-family: font-file-82132;

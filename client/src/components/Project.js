@@ -106,7 +106,11 @@ const Project = () => {
                     <h1> {project[i].name}</h1>
                     <button type="button" class="btn btn-dark">
                         {" "}
-                        <a href={project[i].github}>Site web</a>
+                        <a href={project[i].github}>Repo</a>
+                    </button>
+                    <button type="button" class="btn btn-dark">
+                        {" "}
+                        <a href={project[i].link}>Site web</a>
                     </button>
                 </div>
             </animated.div>

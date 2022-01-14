@@ -18,14 +18,12 @@ html {
 }
 
 .contenue {
-    margin: 2em auto;
+    margin: 5vw auto;
 }
 @media screen and (max-width: 450px) {
     .contenue {
         width: 80vw;
         height: 100vh;
-
-        margin: 2em auto;
     }
     .card {
         max-width: 75vw;
@@ -39,7 +37,6 @@ html {
 }
 @media screen and (min-width: 451px) {
     .contenue {
-        margin: 5em auto;
         width: 80vw;
         height: 100vh;
     }
@@ -52,7 +49,4 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-    .contenue {
-        margin: 10em;
-    }
 }
