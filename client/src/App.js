@@ -27,10 +27,11 @@ function App() {
             {
                 opacity: 1,
                 y: 0,
+                duration: 0.8,
                 scrollTrigger: {
                     trigger: elem,
                     start: "top center",
-                    end: "bottom center",
+                    end: "bottom bottom",
                 },
             }
         );

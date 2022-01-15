@@ -103,7 +103,15 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> s</h2> <p> s</p>
+                        <h2 className="qualification__items__title">
+                            {" "}
+                            Association, Force de vente
+                        </h2>{" "}
+                        <p className="qualification__items__text">
+                            {" "}
+                            aide à la gestion de l'association SEER / Force de
+                            vente chez Yves Rocher
+                        </p>
                     </div>
                     <div
                         className={
@@ -112,7 +120,14 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> d</h2> <p> d</p>
+                        <h2 className="qualification__items__title">
+                            Assistante commercial
+                        </h2>{" "}
+                        <p className="qualification__items__text">
+                            {" "}
+                            Assistante commercial pour easySteelSheds,
+                            Luxembourg
+                        </p>
                     </div>
                     <div
                         className={
@@ -121,7 +136,14 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> sssd</h2> <p> ssd</p>
+                        <h2 className="qualification__items__title">
+                            {" "}
+                            Ecole O'clock
+                        </h2>{" "}
+                        <p className="qualification__items__text">
+                            {" "}
+                            Formation de 6 mois sur JS, Node et react{" "}
+                        </p>
                     </div>
                     <div
                         className={
@@ -130,12 +152,14 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> d</h2>{" "}
-                        <span className="qualification__items__content__span">
-                            {" "}
-                            date
-                        </span>{" "}
-                        <p> d</p>
+                        <h2 className="qualification__items__title">
+                            Titre pro{" "}
+                        </h2>{" "}
+                        <p className="qualification__items__text">
+                            Obtention de mon titre professionnel 'Développeur
+                            web et web mobile et Certification Opquast, maîtrise
+                            de la qualité web
+                        </p>
                     </div>
                     <div
                         className={
@@ -144,7 +168,8 @@ const Qualification = () => {
                                 : "qualification__items__content"
                         }
                     >
-                        <h2> ddd</h2> <p> dsfed</p>
+                        <h2 className="qualification__items__title"> ddd</h2>{" "}
+                        <p className="qualification__items__text">dsfed</p>
                     </div>
                 </div>
             </div>

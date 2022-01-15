@@ -62,6 +62,11 @@
         font-family: font-file-82132;
         color: #978c9221;
     }
+
+    &__indication {
+        position: absolute;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -75,6 +80,21 @@
         &__work {
             right: 0;
             top: -0.6em;
+        }
+        &__indications {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 10%;
+            bottom: 55%;
+        }
+        &__indication {
+            font-size: 0.8em;
+            width: 7em;
+            background: rgb(41, 41, 41);
+            margin: 1em;
+            border-radius: 2em;
+            color: white;
         }
     }
 
@@ -97,6 +117,24 @@
             right: 0.7em;
             bottom: -0.3em;
         }
+        &__indications {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 10%;
+            bottom: 55%;
+        }
+        &__indication {
+            width: 7em;
+            background: rgb(41, 41, 41);
+            margin: 1em;
+            border-radius: 2em;
+            color: white;
+        }
+    }
+    #PhoneScreen {
+        height: 20em;
+        width: 10em;
     }
 }
 
@@ -109,6 +147,20 @@
         &__work {
             top: -0.8em;
             right: -1em;
+        }
+        &__indications {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 70%;
+            bottom: 55%;
+        }
+        &__indication {
+            width: 7em;
+            background: rgb(41, 41, 41);
+            margin: 1em;
+            border-radius: 2em;
+            color: white;
         }
     }
 

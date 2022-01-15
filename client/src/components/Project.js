@@ -4,9 +4,7 @@ import { useGesture } from "react-use-gesture";
 import styled from "styled-components";
 import Datas from "../data.js";
 import "../styles/Project.scss";
-
 console.log(Datas);
-
 const project = Datas.Project.map((project) => {
     return project;
 });
@@ -130,7 +128,16 @@ const Project = () => {
                     uns{" "}
                 </p>
             </div>
-            <PhoneSection>{phones}</PhoneSection>{" "}
+            <div>
+                {" "}
+                <PhoneSection>{phones}</PhoneSection>{" "}
+                <div className="content__indications">
+                    <p className="content__indication">
+                        {" "}
+                        click on the phone, hold the click and slide it{" "}
+                    </p>{" "}
+                </div>
+            </div>{" "}
         </>
     );
 };
