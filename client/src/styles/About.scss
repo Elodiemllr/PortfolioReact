@@ -60,6 +60,8 @@
             margin-top: 2em;
             height: 17em;
             overflow: scroll;
+            width: 60vw;
+            text-align: center;
         }
         &__buttons {
             width: fit-content;
@@ -80,6 +82,8 @@
             margin-top: 2em;
             height: 10em;
             overflow: scroll;
+            width: 60vw;
+            text-align: center;
         }
         &__img {
             max-width: 30em;
@@ -137,6 +141,7 @@
             margin-top: 2em;
             height: 15em;
             overflow: scroll;
+            width: fit-content;
         }
         &__img {
             max-width: 20em;
@@ -180,6 +185,7 @@
         &__content {
             overflow: initial;
             height: fit-content;
+            width: fit-content;
         }
 
         &__infos {

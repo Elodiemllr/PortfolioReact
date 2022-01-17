@@ -56,13 +56,12 @@ const Datas = {
     Project: [
         {
             id: 1,
-            name: "By Erika",
+            name: "Portfolio JS",
 
-            description:
-                "By Erika est un faux shop en ligne, inspiré d'une boutique d'une amie",
+            description: "Mon premier portfolio en javascript",
             image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/By-Erika",
-            link: "#",
+            link: "https://gracious-bose-fc6178.netlify.app/",
         },
         {
             id: 2,
@@ -80,7 +79,7 @@ const Datas = {
                 "Un clone inspiré du géant des platform de vidéo en ligne, Netflix",
             image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/FakeMovieApp",
-            link: "#",
+            link: "https://app.netlify.com/sites/infallible-brown-9b2979",
         },
         {
             id: 4,
@@ -89,7 +88,7 @@ const Datas = {
                 "Un projet de fin d'année, réalisé en équipe avec la méthodologie agile",
 
             image: "./img/pink.png",
-            github: "#",
+            github: "https://www.canva.com/design/DAE1jSUlOXk/gai5pHAzksTkp5n0UXS5zA/view?utm_content=DAE1jSUlOXk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
             link: "https://kodo-ecolo.netlify.app/",
         },
         {
@@ -99,8 +98,22 @@ const Datas = {
                 "Un réseau social simple avec systeme de connexion, profil et post",
             image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/SocialMedia",
-            link: "#",
+            link: "https://www.canva.com/design/DAE1jUjyZig/s9Jh-8o86RruG4XdrLp3uA/view?utm_content=DAE1jUjyZig&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
         },
+        {
+            id: 6,
+            name: "Github API ",
+            description: "Un moteur de recherche avec une API github",
+            image: "./img/pink.png",
+            github: "https://github.com/Elodiemllr/GIThub-API-school-project",
+            link: "https://dreamy-wing-03a5c5.netlify.app",
+        },
+    ],
+    Nav: [
+        { id: 1, name: "Work", href: "#project" },
+        { id: 2, name: "About", href: "#about" },
+        { id: 3, name: "Skills", href: "#skills" },
+        { id: 4, name: "Qualification", href: "#qualification" },
     ],
 };
 

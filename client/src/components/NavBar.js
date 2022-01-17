@@ -1,7 +1,9 @@
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
+import Datas from "../data.js";
 import "../styles/NavBar.scss";
 
+const navs = Datas.Nav;
 const NavBar = () => {
     const [moveMenu, setMoveMenu] = useState(false);
     const [showNav, setShowNav] = useState(false);
@@ -57,30 +59,18 @@ const NavBar = () => {
                         onClick={initialState}
                     />
                     <ul className="nav__list grid">
-                        <li className="nav__item">
-                            <a href="#project" className="menu__link">
-                                Work
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#about" className="menu__link">
-                                About
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#skills" className="menu__link">
-                                Skills
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a
-                                href="#qualification"
-                                className="menu__link"
-                                id="nav__cat"
-                            >
-                                Qualification
-                            </a>
-                        </li>
+                        {navs.map((nav) => {
+                            return (
+                                <li
+                                    className="nav__item"
+                                    onClick={initialState}
+                                >
+                                    <a href={nav.href} className="menu__link">
+                                        {nav.name}{" "}
+                                    </a>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             )}

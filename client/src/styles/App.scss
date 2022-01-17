@@ -20,11 +20,16 @@ html {
 .contenue {
     margin: 5vw auto;
 }
+
+.bg4 {
+    height: fit-content !important;
+}
 @media screen and (max-width: 450px) {
     .contenue {
         width: 80vw;
         height: 100vh;
     }
+
     .card {
         max-width: 75vw;
         max-height: 50vh;

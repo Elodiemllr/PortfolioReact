@@ -23,11 +23,21 @@ const Skills = () => {
             <div className="skills__categories">
                 <div className="skills__front">
                     <h2 className="skills__front__title"> </h2>
-                    <ul>
-                        {skills.map((skill) => {
-                            return <li>{skill.name} </li>;
-                        })}
-                    </ul>
+                    <section class="horizontal">
+                        <div class="pin-wrap">
+                            <div class="animation-wrap to-right">
+                                <ul>
+                                    {skills.map((skill) => {
+                                        return (
+                                            <li className="item">
+                                                {skill.name}{" "}
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </div>{" "}
+                        </div>{" "}
+                    </section>{" "}
                 </div>
             </div>
         </section>

@@ -9,6 +9,10 @@
             font-family: font-file-82132;
             color: #978c9221;
         }
+
+        &__text {
+            width: 60vw !important;
+        }
     }
     &__front {
         ul {
@@ -106,7 +110,6 @@
         &__front {
             margin: 3em auto;
             ul {
-                display: flex;
                 flex-direction: column;
                 height: 30vw;
                 font-size: 7vh;

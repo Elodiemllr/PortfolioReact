@@ -18,7 +18,6 @@
     -ms-flex-pack: center;
     justify-content: center;
     transition: margin-right 2s;
-
     &__content {
         margin-left: 1em;
         transform: translateY(-50%);
@@ -72,7 +71,6 @@
     background-color: white;
     width: 3em;
     opacity: 1;
-
     left: 0;
     top: 0;
     bottom: 0;
@@ -103,7 +101,7 @@
     width: fit-content;
 
     &__close {
-        font-size: 2vw;
+        font-size: 3vw;
         cursor: pointer;
         color: #b65d62fa;
     }
@@ -129,5 +127,10 @@
         list-style-type: none;
         font-size: 1.2vw;
         margin: 2em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .menu__close {
+        font-size: 5vw;
     }
 }

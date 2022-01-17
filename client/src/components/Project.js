@@ -102,14 +102,16 @@ const Project = () => {
             >
                 <div className="phonecontent">
                     <h1> {project[i].name}</h1>
-                    <button type="button" class="btn btn-dark">
-                        {" "}
-                        <a href={project[i].github}>Repo</a>
-                    </button>
-                    <button type="button" class="btn btn-dark">
-                        {" "}
-                        <a href={project[i].link}>Site web</a>
-                    </button>
+                    <div className="btns">
+                        <button type="button" class="btn btn-dark">
+                            {" "}
+                            <a href={project[i].github}>Repo</a>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                            {" "}
+                            <a href={project[i].link}>Site web</a>
+                        </button>
+                    </div>
                 </div>
             </animated.div>
         </animated.div>

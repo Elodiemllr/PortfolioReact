@@ -62,7 +62,7 @@ const About = () => {
                     <div className="about__buttons">
                         <a
                             download=""
-                            href="https://www.canva.com/design/DAExxQ715Qo/dYY_hdzcU7QxezoOi_vf4Q/view?utm_content=DAExxQ715Qo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                            href="https://www.canva.com/design/DAE1jV7GgYU/JCiSMNl1fx3doJIRF7lokw/view?utm_content=DAE1jV7GgYU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
                             className="button button--flex"
                         >
                             Télecharge mon CV ici
