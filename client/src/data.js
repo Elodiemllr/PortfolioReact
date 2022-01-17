@@ -55,34 +55,25 @@ const Datas = {
 
     Project: [
         {
-            id: 1,
-            name: "Portfolio JS",
-
-            description: "Mon premier portfolio en javascript",
-            image: "./img/grey.png",
-            github: "https://github.com/Elodiemllr/By-Erika",
-            link: "https://gracious-bose-fc6178.netlify.app/",
+            id: 2,
+            name: "Space share",
+            description:
+                "Un réseau social simple avec systeme de connexion, profil et post",
+            image: "./img/pink.png",
+            github: "https://github.com/Elodiemllr/SocialMedia",
+            link: "https://www.canva.com/design/DAE1jUjyZig/s9Jh-8o86RruG4XdrLp3uA/view?utm_content=DAE1jUjyZig&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
         },
         {
-            id: 2,
+            id: 1,
             name: "Calculatrice",
             description:
                 "Un projet simple et rapide à faire mais toujours pratique",
-            image: "./img/pink.png",
+            image: "./img/grey.png",
             github: "https://github.com/Elodiemllr/Calculatrice",
             link: "https://gracious-raman-0fb939.netlify.app/?fbclid=IwAR3n53g0-vngST9YOOtU71hETWUBHzaY9gcT1J-eYYdo_qw4qpRKB-WAgPQ",
         },
         {
             id: 3,
-            name: "Fake Movie App",
-            description:
-                "Un clone inspiré du géant des platform de vidéo en ligne, Netflix",
-            image: "./img/grey.png",
-            github: "https://github.com/Elodiemllr/FakeMovieApp",
-            link: "https://app.netlify.com/sites/infallible-brown-9b2979",
-        },
-        {
-            id: 4,
             name: "Kodo",
             description:
                 "Un projet de fin d'année, réalisé en équipe avec la méthodologie agile",
@@ -92,21 +83,30 @@ const Datas = {
             link: "https://kodo-ecolo.netlify.app/",
         },
         {
-            id: 5,
-            name: "Space share",
+            id: 4,
+            name: "Fake Movie App",
             description:
-                "Un réseau social simple avec systeme de connexion, profil et post",
+                "Un clone inspiré du géant des platform de vidéo en ligne, Netflix",
             image: "./img/grey.png",
-            github: "https://github.com/Elodiemllr/SocialMedia",
-            link: "https://www.canva.com/design/DAE1jUjyZig/s9Jh-8o86RruG4XdrLp3uA/view?utm_content=DAE1jUjyZig&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+            github: "https://github.com/Elodiemllr/FakeMovieApp",
+            link: "https://infallible-brown-9b2979.netlify.app",
         },
         {
-            id: 6,
+            id: 5,
             name: "Github API ",
             description: "Un moteur de recherche avec une API github",
             image: "./img/pink.png",
             github: "https://github.com/Elodiemllr/GIThub-API-school-project",
             link: "https://dreamy-wing-03a5c5.netlify.app",
+        },
+        {
+            id: 6,
+            name: "Portfolio JS",
+
+            description: "Mon premier portfolio en javascript",
+            image: "./img/grey.png",
+            github: "https://github.com/Elodiemllr/portfolio",
+            link: "https://gracious-bose-fc6178.netlify.app/",
         },
     ],
     Nav: [
